@@ -80,6 +80,16 @@
   education3:
   education4:
 
+- name: Louw Feenstra
+  photo: rock.jpg
+  info: PhD Student, started November 2024
+  email: b
+  number_educ: 2
+  education1: BSc, Leiden University
+  education2: MSc, LMU Munich, with [Christian Pfleiderer](https://www.professoren.tum.de/en/pfleiderer-christian)
+  education3:
+  education4:
+
 - name: Kees van Oosten
   photo: DSC_1032.JPG
   info: FFine mechanical engineer (also associated with the FMD)
@@ -98,10 +108,20 @@
 
 - name: Ilse Kuijf
   photo: ilse.jpeg
-  info: Shared PhD student in the [van Nieuwenburg group](https://evert.info), working with us
+  info: Shared PhD student in the [van Nieuwenburg group](https://evert.info)
   email: Bastiaans@Physics.LeidenUniv.nl
   number_educ: 1
   education1: Master Leiden University
+
+- name: Jaroslav Sawitsch
+  photo: jaroslav.png
+  info: Responsible for admin and finances
+  email: b
+  number_educ: 2
+  education1: Fachklasse für Bürokaufleute, Immenstadt
+  education2: 
+  education3:
+  education4:
 
 - name: "This could be you !"
   photo: rock.jpg
