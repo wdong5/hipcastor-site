@@ -10,7 +10,7 @@ title: HiPCastor @ OSU
 email: kyle.hale@oregonstate.edu
 description: > # this means to ignore newlines until "baseurl:"
   Website of the HiPCastor Group at Oregon State University.
-baseurl: "hipcastor-site"
+baseurl: "/hipcastor-site"
 url: "https://hipcastor-osu.github.io"
 
 include:
