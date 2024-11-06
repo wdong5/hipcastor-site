@@ -65,7 +65,7 @@ systems for machine learning, and virtualization. (see
 [Research](research)). 
 
 
-Blurb on HPC research at OSU, Huang etc.
+OSU is the future home of the [Huang Collaborative Innovation Complex](https://leadership.oregonstate.edu/huang-cic). The complex will harness one of the nation’s most powerful supercomputers and a cleanroom to advance research and learning in artificial intelligence, robotics and materials science.
 
 
  **We are  looking for passionate new PhD students, undergrads, and Masters students to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/openings)**!**
