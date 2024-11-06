@@ -1,25 +1,25 @@
-- name: [Wenqian Dong](https://wdong5.github.io/index.html)
+- name: <a href="https://wdong5.github.io/index.html">Wenqian Dong</a>
   photo: Wenqian.jpg
   info: Assistant Professor, since 2024
   email: wenqian.dong@oregonstate.edu
   number_educ: 1
   education1: Ph.D. @ UC Merced
 
-- name: [Renato Figueiredo](https://renatof.github.io)
+- name: <a href="https://renatof.github.io">Renato Figueiredo</a>
   photo: Renato.jpeg
   info: Professor, since 2024
   email: renato.figueiredo@oregonstate.edu
   number_educ: 1
   education1: Ph.D. @ Purdue
 
-- name: [Kyle Hale](https://www.halek.co)
+- name: <a href="https://www.halek.co">Kyle Hale</a>
   photo: kyle.png
   info: Associate Professor, since 2024
   email: kyle.hale@oregonstate.edu
   number_educ: 1
   education1: Ph.D. @ Northwestern (2016)
 
-- name: [Nanda Velugoti](https://nanda.one)
+- name: <a href="https://nanda.one">Nanda Velugoti</a>
   photo: nanda.jpeg
   info: Ph.D. Student, since 2024
   email: velugotn@oregonstate.edu
