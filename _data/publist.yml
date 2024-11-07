@@ -81,7 +81,7 @@
     url: https://dl.acm.org/doi/10.1145/3453483.3460969
     display: 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation, 2021
   highlight: 0
-  series: SC '21
+  series: PLDI '21
 
 - title: "Paths to OpenMP in the Kernel"
   description: This paper describes several ways to enable OpenMP support in the OS kernel
@@ -90,4 +90,4 @@
     url: https://dl.acm.org/doi/10.1145/3458817.3476183
     display: International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
   highlight: 0
-  series: PLDI '21
+  series: SC '21
