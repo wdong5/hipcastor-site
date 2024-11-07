@@ -11,7 +11,7 @@ permalink: /publications/
 
 ## Group highlights
 
-**At the end of this page, you can find a [selected list of publications](#selected-publications). 
+**At the end of this page, you can find a [selected list of publications](#selected-publications)**. 
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
