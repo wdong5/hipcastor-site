@@ -9,9 +9,7 @@
   series: eScience '24
 
 - title: "TrackFM: Far-out Compiler Support for a Far Memory World"
-  description: This paper introduces the compiler-based approach to far memory. Prior approaches leverage either the OS kernel's 
-  paging subsystem or a library in userspace. The latter requires code changes, and the former introduces I/O overheads. We present
-  the first approach that uses the compiler for automatic far memory. 
+  description: This paper introduces the compiler-based approach to far memory. Prior approaches leverage either the OS kernel's paging subsystem or a library in userspace. The latter requires code changes, and the former introduces I/O overheads. We present the first approach that uses the compiler for automatic far memory. 
   authors: Brian R. Tauro, Brian Suchy, Simone Campanoni, Peter Dinda, Kyle C. Hale
   image: trackfm.png
   link:
