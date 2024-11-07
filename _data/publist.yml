@@ -6,6 +6,7 @@
     url: https://ieeexplore.ieee.org/document/10678660
     display: 20th International IEEE eScience Conference, 2024
   highlight: 0
+  series: eScience '24
 
 - title: "TrackFM: Far-out Compiler Support for a Far Memory World"
   description: This paper introduces the compiler-based approach to far memory
@@ -23,6 +24,7 @@
     url: https://doi.org/10.1016/j.future.2022.10.007
     display: Future Generation Computer Systems, Volume 140, March 2023, Pages 104-116
   highlight: 0
+  series: FGCS 140(2024)
 
 - title: "PolyNet: Cost- and Performance-aware Multi-criteria Link Selection for Software-defined Edge-to-cloud Overlay Virtual Networks"
   description: This paper describes a link selection policy for virtual networks such as EdgeVPN
@@ -31,6 +33,7 @@
     url: https://ieeexplore.ieee.org/document/10588920
     display: Proceedings of IEEE NetSoft, 2024
   highlight: 0
+  series: NetSoft '24
 
 - title: "Bolt: Fast Inference for Random Forests"
   description: We present Bolt, a platform that restructures whole random forests, not just individual trees, to speed up inference
@@ -39,6 +42,7 @@
     url: https://dl.acm.org/doi/10.1145/3528535.3531519
     display: 23rd ACM/IFIP International Middleware Conference, 2022
   highlight: 0
+  series: Middleware '22
 
 - title: "Modeling Speedup in Multi-OS Environments"
   description: This paper presents an analytical modeling framework for multi-kernel OSes in HPC systems
@@ -47,6 +51,7 @@
     url: https://ieeexplore.ieee.org/document/9547731
     display: IEEE Transactions on Parallel and Distributed Systems Volume 33, June 2022, pages 1436-1450
   highlight: 0
+  series: TPDS 33(6) '22
 
 - title: "Isolating Functions at the Hardware Limit with Virtines"
   description: In this paper we show how to isolate functions in low-level languages using lightweight microVMs
@@ -55,6 +60,7 @@
     url: https://dl.acm.org/doi/abs/10.1145/3492321.3519553
     display: 7th European Conference on Computer Systems, 2022
   highlight: 0
+  series: EuroSys '22
 
 - title: "Edge-to-cloud Virtualized Cyberinfrastructure for Near Real-time Water Quality Forecasting in Lakes and Reservoirs"
   description: This paper describes the cyberinfrastructure underpinning the FLARE forecasting system
@@ -63,6 +69,7 @@
     url: https://ieeexplore.ieee.org/document/9582387
     display: 17th International IEEE eScience Conference, 2021
   highlight: 0
+  series: eScience '21
 
 - title: "Task Parallel Assembly Language for Uncompromising Parallelism"
   description: This paper describes how to use heartbeat scheduling and a new task-parallel assembly language to unleash parallelism
@@ -71,6 +78,7 @@
     url: https://dl.acm.org/doi/10.1145/3453483.3460969
     display: 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation, 2021
   highlight: 0
+  series: SC '21
 
 - title: "Paths to OpenMP in the Kernel"
   description: This paper describes several ways to enable OpenMP support in the OS kernel
@@ -79,3 +87,4 @@
     url: https://dl.acm.org/doi/10.1145/3458817.3476183
     display: International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
   highlight: 0
+  series: PLDI '21
