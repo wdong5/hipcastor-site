@@ -11,7 +11,8 @@ permalink: /publications/
 
 ## Group highlights
 
-**Highlighted recent publications from the group; scroll down for [an extended list of publications](#full-list-of-publications).**
+**Highlighted recent publications from the group; scroll down for [an extended list of publications](#extended-publications).**
+
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
@@ -51,8 +52,7 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
-
-## Full List of publications
+## Extended Publications
 
 {% for publi in site.data.publist %}
 

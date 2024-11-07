@@ -7,6 +7,14 @@
     display: 20th International IEEE eScience Conference, 2024
   highlight: 0
 
+- title: "TrackFM: Far-out Compiler Support for a Far Memory World"
+  description: This paper introduces the compiler-based approach to far memory
+  authors: Brian R. Tauro, Brian Suchy, Simone Campanoni, Peter Dinda, Kyle C. Hale
+  link:
+    url: https://dl.acm.org/doi/10.1145/3617232.3624856
+    display: 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 1
+  highlight: 0
+
 - title: "EdgeVPN: Self-organizing layer-2 virtual edge networks"
   description: This paper describes the architecture and implementation of EdgeVPN
   authors: K. Subratie, S. Aditya, R. Figueiredo
@@ -23,10 +31,50 @@
     display: Proceedings of IEEE NetSoft, 2024
   highlight: 0
 
+- title: "Bolt: Fast Inference for Random Forests"
+  description: We present Bolt, a platform that restructures whole random forests, not just individual trees, to speed up inference
+  authors: Eduardo Romero, Christopher Stewart, Angela Li, Kyle C. Hale, Nathaniel Morris
+  link:
+    url: https://dl.acm.org/doi/10.1145/3528535.3531519
+    display: 23rd ACM/IFIP International Middleware Conference, 2022
+  highlight: 0
+
+- title: "Modeling Speedup in Multi-OS Environments"
+  description: This paper presents an analytical modeling framework for multi-kernel OSes in HPC systems
+  authors: Brian R. Tauro, Conghao Liu, Kyle C. Hale
+  link: 
+    url: https://ieeexplore.ieee.org/document/9547731
+    display: IEEE Transactions on Parallel and Distributed Systems Volume 33, June 2022, pages 1436-1450
+  highlight: 0
+
+- title: "Isolating Functions at the Hardware Limit with Virtines"
+  description: In this paper we show how to isolate functions in low-level languages using lightweight microVMs
+  authors: Nicholas C. Wanninger, Joshua J. Bowden, Kirtankumar Shetty, Ayush Garg, and Kyle C. Hale
+  link:
+    url: https://dl.acm.org/doi/abs/10.1145/3492321.3519553
+    display: 7th European Conference on Computer Systems, 2022
+  highlight: 0
+
 - title: "Edge-to-cloud Virtualized Cyberinfrastructure for Near Real-time Water Quality Forecasting in Lakes and Reservoirs"
   description: This paper describes the cyberinfrastructure underpinning the FLARE forecasting system
   authors: V. Daneshmand, A. Breef-Pilz, C. Carey, Y. Jin, Y-J. Ku, K. Subratie, R. Q. Thomas, R. Figueiredo
   link:
     url: https://ieeexplore.ieee.org/document/9582387
     display: 17th International IEEE eScience Conference, 2021
+  highlight: 0
+
+- title: "Task Parallel Assembly Language for Uncompromising Parallelism"
+  description: This paper describes how to use heartbeat scheduling and a new task-parallel assembly language to unleash parallelism
+  authors: Mike Rainey, Ryan R. Newton, Kyle C. Hale, Nikos Hardavellas, Simone Campanoni, Peter Dinda, Umut A. Acar
+  link:
+    url: https://dl.acm.org/doi/10.1145/3453483.3460969
+    display: 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation, 2021
+  highlight: 0
+
+- title: "Paths to OpenMP in the Kernel"
+  description: This paper describes several ways to enable OpenMP support in the OS kernel
+  authors: Jiacheng Ma, Wenyi Wang, Aaron Nelson, Michael Cuevas, Brian Homerding, Conghao Liu, Zhen Huang, Simone Campanoni, Kyle C. Hale, and Peter Dinda
+  link:
+    url: https://dl.acm.org/doi/10.1145/3458817.3476183
+    display: International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
   highlight: 0
