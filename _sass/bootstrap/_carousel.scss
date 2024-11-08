@@ -21,7 +21,6 @@
     // Account for jankitude on images
     > img,
     > a > img {
-      width: 60%;
       @include img-responsive;
       line-height: 1;
     }
