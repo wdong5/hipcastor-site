@@ -17,7 +17,7 @@
   info: Associate Professor, since 2024
   email: kyle.hale@oregonstate.edu
   number_educ: 1
-  education1: Ph.D. @ Northwestern (2016)
+  education1: Ph.D. @ Northwestern 
 
 - name: <a href="https://nanda.one">Nanda Velugoti</a>
   photo: nanda.jpeg
@@ -28,7 +28,7 @@
 
 - name: "This could be you!"
   photo: rock.jpg
-  info: See <a href="/openings">openings</a> for more info
+  info: See <a href="{{ site.baseurl }}/openings">openings</a> for more info
   email: kyle.hale@oregonstate.edu
   number_educ: 0
   education1:
