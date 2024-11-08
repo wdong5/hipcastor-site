@@ -38,7 +38,7 @@ around Bend. To the South is Crater Lake National Park and
 California's breathtaking Redwood forests. If you need a big city vibe,
 Portland is only a little more than an hour to the North. 
 
-<div markdown="0" id="carousel2" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
+<div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -67,7 +67,7 @@ Portland is only a little more than an hour to the North.
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Slide 5" />
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Slide 6" />
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Slide 7" />
-            <img src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpg" alt="Slide 8" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Slide 8" />
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Slide 9" />
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Slide 10" />
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" />
