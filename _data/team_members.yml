@@ -28,7 +28,7 @@
 
 - name: "This could be you!"
   photo: rock.jpg
-  info: See <a href="{{ site.baseurl }}/openings">openings</a> for more info
+  info: See <a href="hipcastor-site/openings">openings</a> for more info
   email: kyle.hale@oregonstate.edu
   number_educ: 0
   education1:
