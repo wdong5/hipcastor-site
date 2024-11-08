@@ -61,17 +61,41 @@ Portland is only a little more than an hour to the North.
     <div class="carousel-inner" markdown="0">
         <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/campus-fall.jpg" alt="Slide 1" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Slide 2" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Slide 3" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Slide 4" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Slide 5" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Slide 6" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Slide 7" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Slide 8" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Slide 9" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Slide 10" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Slide 12" />
+        </div>
+        <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Slide 13" />
         </div>
     </div>
