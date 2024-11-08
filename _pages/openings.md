@@ -41,20 +41,20 @@ Portland is only a little more than an hour to the North.
 <div markdown="0" id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-        <li data-target="#carousel" data-slide-to="3"></li>
-        <li data-target="#carousel" data-slide-to="4"></li>
-        <li data-target="#carousel" data-slide-to="5"></li>
-        <li data-target="#carousel" data-slide-to="6"></li>
-        <li data-target="#carousel" data-slide-to="7"></li>
-        <li data-target="#carousel" data-slide-to="8"></li>
-        <li data-target="#carousel" data-slide-to="9"></li>
-        <li data-target="#carousel" data-slide-to="10"></li>
-        <li data-target="#carousel" data-slide-to="11"></li>
-        <li data-target="#carousel" data-slide-to="12"></li>
-        <li data-target="#carousel" data-slide-to="13"></li>
+        <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-2" data-slide-to="1"></li>
+        <li data-target="#carousel-2" data-slide-to="2"></li>
+        <li data-target="#carousel-2" data-slide-to="3"></li>
+        <li data-target="#carousel-2" data-slide-to="4"></li>
+        <li data-target="#carousel-2" data-slide-to="5"></li>
+        <li data-target="#carousel-2" data-slide-to="6"></li>
+        <li data-target="#carousel-2" data-slide-to="7"></li>
+        <li data-target="#carousel-2" data-slide-to="8"></li>
+        <li data-target="#carousel-2" data-slide-to="9"></li>
+        <li data-target="#carousel-2" data-slide-to="10"></li>
+        <li data-target="#carousel-2" data-slide-to="11"></li>
+        <li data-target="#carousel-2" data-slide-to="12"></li>
+        <li data-target="#carousel-2" data-slide-to="13"></li>
     </ol>
 
 <!-- Items -->
@@ -93,18 +93,18 @@ Portland is only a little more than an hour to the North.
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Slide 12" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Mt. Hood" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Slide 13" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Santiam Pass" />
         </div>
     </div>
 
-  <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+  <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+  <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
