@@ -38,7 +38,7 @@ around Bend. To the South is Crater Lake National Park and
 California's breathtaking Redwood forests. If you need a big city vibe,
 Portland is only a little more than an hour to the North. 
 
-<div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
+<div markdown="0" id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -62,49 +62,49 @@ Portland is only a little more than an hour to the North.
         <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/campus-fall.jpg" alt="Slide 1" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Slide 2" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Slide 3" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Slide 4" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Slide 5" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Slide 6" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Slide 7" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Slide 8" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Slide 9" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Slide 10" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Slide 12" />
         </div>
-        <div class="item active">
+        <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Slide 13" />
         </div>
     </div>
 
-  <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+  <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+  <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
