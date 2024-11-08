@@ -89,3 +89,13 @@
     display: International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
   highlight: 0
   series: SC '21
+
+- title: "Near-term Ecological Forecasting for Climate Change Action"
+  description:  Ecological forecasts can be used to predict changes in ecosystems and subsequent impacts on communities. In addition to long-term projections, there is an important need for forecasts in shorter-term decision-making time periods of weeks and months. Scientists at the Ecological Forecasting Initiative are working to advance the field through a process that enables them to continually update model predictions with observed data in order to improve our ability to foresee what may happen in the future.
+  authors: Michael Dietze, Ethan P. White, Antoinette Abeyta, Carl Boettiger, Nievita Bueno Watts, Cayelan C. Carey, Rebecca Chaplin-Kramer, Ryan E. Emanuel, S. K. Morgan Ernest, Renato J. Figueiredo, Michael D. Gerst, Leah R. Johnson, Melissa A. Kenney, Jason S. McLachlan, Ioannis Ch. Paschalidis, Jody A. Peters, Christine R. Rollinson, Juniper Simonis, Kira Sullivan-Wiley, R. Quinn Thomas, Glenda M. Wardle, Alyssa M. Willson & Jacob Zwart
+  image: EFI.png
+  link:
+    url: https://www.nature.com/articles/s41558-024-02182-0 
+    display: Nature Climate Change, Nov. 2024
+  series: "Nature '24"
+  highlight: 1
