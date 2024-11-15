@@ -36,14 +36,41 @@
   highlight: 0
   series: NetSoft '24
 
+- title: "TimeX++: Learning Time-Series Explanations with Information Bottleneck"
+description: This paper introduces TimeX++, a method for time-series explanations using an information bottleneck approach.
+authors: Zichuan Liu, Tianchun Wang, Jimeng Shi, Xu Zheng, Zhuomin Chen, Lei Song, Wenqian Dong, Jayantha Obeysekera, Farhad Shirani, Dongsheng Luo
+link:
+  url: https://dl.acm.org/doi/10.1145/3588195.3592985
+  display: Proceedings of the 41st International Conference on Machine Learning (ICML), 2024
+highlight: 0
+series: ICML '24
+
+- title: "Auto-HPCnet: An Automatic Framework to Build Neural Network-based Surrogate Models for HPC Applications"
+description: This work presents Auto-HPCnet, a framework to construct neural network-based surrogate models for HPC tasks.
+authors: Wenqian Dong, Gokcen Kestor, Dong Li
+link:
+  url: https://dl.acm.org/doi/pdf/10.1145/3588195.3592985
+  display: Proceedings of the 32nd ACM International Symposium on High-Performance Parallel and Distributed Computing (HPDC), 2023
+highlight: 0
+series: HPDC '23
+
+- title: "Betty: Enabling Large-Scale GNN Training with Batch-Level Graph Partitioning"
+description: This paper details a batch-level graph partitioning approach for large-scale GNN training.
+authors: Shuangyan Yang, Mingjia Zhang, Wenqian Dong, Dong Li
+link:
+  url: https://dl.acm.org/doi/10.1145/3575693.3575725
+  display: Proceedings of the 28th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
+highlight: 0
+series: ASPLOS '23
+
 - title: "Bolt: Fast Inference for Random Forests"
-  description: We present Bolt, a platform that restructures whole random forests, not just individual trees, to speed up inference
-  authors: Eduardo Romero, Christopher Stewart, Angela Li, Kyle C. Hale, Nathaniel Morris
-  link:
-    url: https://dl.acm.org/doi/10.1145/3528535.3531519
-    display: 23rd ACM/IFIP International Middleware Conference, 2022
-  highlight: 0
-  series: Middleware '22
+description: We present Bolt, a platform that restructures whole random forests, not just individual trees, to speed up inference
+authors: Eduardo Romero, Christopher Stewart, Angela Li, Kyle C. Hale, Nathaniel Morris
+link:
+  url: https://dl.acm.org/doi/10.1145/3528535.3531519
+  display: 23rd ACM/IFIP International Middleware Conference, 2022
+highlight: 0
+series: Middleware '22
 
 - title: "Modeling Speedup in Multi-OS Environments"
   description: This paper presents an analytical modeling framework for multi-kernel OSes in HPC systems
@@ -72,6 +99,33 @@
   highlight: 0
   series: eScience '21
 
+- title: "Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation"
+  description: This work focuses on deep ensembles for uncertainty-based cardinality estimation.
+  authors: Jie Liu, Wenqian Dong, Qingqing Zhou, Dong Li
+  link:
+    url: https://vldb.org/pvldb/vol14/p1950-liu.pdf
+    display: Proceedings of the 47th International Conference on Very Large Data Bases (VLDB), 2021
+  highlight: 0
+  series: VLDB '21
+
+- title: "MD-HM: Memoization-based Molecular Dynamics Simulations on Big Memory System"
+  description: This paper discusses memoization techniques for molecular dynamics simulations in big memory systems.
+  authors: Zhen Xie, Wenqian Dong, Jie Liu, Ivy Peng, Yanbao Ma, Dong Li
+  link:
+    url: https://dl.acm.org/doi/10.1145/3447818.3460365
+    display: Proceedings of the 47th International Conference on Very Large Data Bases (ICS), 2021
+  highlight: 0
+  series: ICS '21
+
+- title: "Tahoe: Tree Structure-Aware High Performance Inference Engine for Decision Tree Ensemble on GPU"
+  description: Tahoe introduces a GPU-accelerated inference engine for decision tree ensembles with tree-structure awareness.
+  authors: Zhen Xie, Wenqian Dong, Jiawen Liu, Hang Liu, Dong Li
+  link:
+    url: https://dl.acm.org/doi/abs/10.1145/3447786.3456251
+    display: Proceedings of the 16th European Conference on Computer Systems (EuroSys), 2021
+  highlight: 0
+  series: EuroSys '21
+
 - title: "Task Parallel Assembly Language for Uncompromising Parallelism"
   description: This paper describes how to use heartbeat scheduling and a new task-parallel assembly language to unleash parallelism
   authors: Mike Rainey, Ryan R. Newton, Kyle C. Hale, Nikos Hardavellas, Simone Campanoni, Peter Dinda, Umut A. Acar
@@ -89,6 +143,24 @@
     display: International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
   highlight: 0
   series: SC '21
+
+- title: "Smart-PGSim: Using Neural Network to Accelerate AC-OPF Power Grid Simulation"
+description: This paper demonstrates the use of neural networks to accelerate AC-OPF power grid simulations.
+authors: Wenqian Dong, Zhen Xie, Gokcen Kestor, Dong Li
+link:
+  url: https://ieeexplore.ieee.org/abstract/document/9355288
+  display: Proceedings of the 32nd ACM/IEEE International Conference for High Performance Computing (SC), 2020
+highlight: 1
+series: SC '20
+
+- title: "Adaptive Neural Network-Based Approximation to Accelerate Eulerian Fluid Simulation"
+description: This work explores adaptive neural network methods to speed up Eulerian fluid simulations.
+authors: Wenqian Dong, Jie Liu, Zhen Xie, Dong Li
+link:
+  url: https://dl.acm.org/doi/10.1145/3295500.3356147
+  display: Proceedings of the 31st ACM/IEEE International Conference for High Performance Computing (SC), 2019
+highlight: 0
+series: SC '19
 
 - title: "Near-term Ecological Forecasting for Climate Change Action"
   description:  Ecological forecasts can be used to predict changes in ecosystems and subsequent impacts on communities. In addition to long-term projections, there is an important need for forecasts in shorter-term decision-making time periods of weeks and months. Scientists at the Ecological Forecasting Initiative are working to advance the field through a process that enables them to continually update model predictions with observed data in order to improve our ability to foresee what may happen in the future.
