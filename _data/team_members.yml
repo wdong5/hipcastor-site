@@ -19,12 +19,27 @@
   number_educ: 1
   education1: Ph.D. @ Northwestern 
 
+- name: Shouwei Gao
+  photo: shouwei_gao.jpeg
+  info: Ph.D. Student, since 2023
+  email: 
+  number_educ: 1
+
+
+- name: Haoyu Zheng
+  photo: haoyu_zheng.jpeg
+  info: Ph.D. Student, since 2023
+  email: 
+  number_educ: 1
+
 - name: <a href="https://nanda.one">Nanda Velugoti</a>
   photo: nanda.jpeg
   info: Ph.D. Student, since 2024
   email: velugotn@oregonstate.edu
   number_educ: 1
   education1: MS @ Illinois Tech (2021)
+
+
 
 - name: "This could be you!"
   photo: rock.jpg
