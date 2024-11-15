@@ -40,7 +40,7 @@
 description: This paper introduces TimeX++, a method for time-series explanations using an information bottleneck approach.
 authors: Zichuan Liu, Tianchun Wang, Jimeng Shi, Xu Zheng, Zhuomin Chen, Lei Song, Wenqian Dong, Jayantha Obeysekera, Farhad Shirani, Dongsheng Luo
 link:
-  url: https://dl.acm.org/doi/10.1145/3588195.3592985
+  url: https://arxiv.org/abs/2405.09308
   display: Proceedings of the 41st International Conference on Machine Learning (ICML), 2024
 highlight: 0
 series: ICML '24
