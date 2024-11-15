@@ -8,7 +8,7 @@ permalink: /research/
 
 # Research
 
-Our overarching goal is to research and develop new techniques applied to a diverse spectrum of computer systems (including edge, cloud and high-performance computing) and across layers of abstraction (including computer architecture, operating systems, virtualization, middleware, and applications). 
+Our overarching goal is to research and develop new techniques applied to a diverse spectrum of computer systems (including edge, cloud, and high-performance computing) and across layers of abstraction (including computer architecture, operating systems, virtualization, middleware, and applications). 
 
 Here are some themes and techniques that we currently work on:
 
