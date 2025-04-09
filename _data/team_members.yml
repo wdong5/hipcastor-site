@@ -46,7 +46,14 @@
   email: haoyu@oregonstate.edu
   number_educ: 1
   education1: BS @ XHU (2019)
-  
+
+- name: <a href="https://www.linkedin.com/in/zehua-zhu-a20807197/">Zehua Zhu</a>
+  photo: zehua.jpg
+  info: Ph.D. student, since 2025
+  email: zhuzeh@oregonstate.edu
+  number_educ: 1
+  education1: MS @ NYU (2024)
+
 - name: "This could be you!"
   photo: rock.jpg
   info: See <a href="../openings">openings</a> for more info
