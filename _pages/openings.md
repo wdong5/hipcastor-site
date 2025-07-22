@@ -8,10 +8,7 @@ permalink: /openings
 
 # Open positions
 
-**We are currently looking to recruit PhD students, and undergraduate researchers! EECS at OSU is also hiring faculty**
-
-## Faculty Positions
-The School of Electrical Engineering and Computer Science at Oregon State University (OSU) seeks to fill multiple full-time (1.00 FTE), 9-month, tenure-track or tenured position, at the rank of Assistant, Associate, or Full Professor, in the areas of high-performance computing (HPC) and Artificial Intelligence (AI). For more information, see [the job posting](https://jobs.oregonstate.edu/postings/161506).
+**We are currently looking to recruit PhD students, and undergraduate researchers!**
 
 ## Grad Student Openings
 We are looking for students with a rigorous academic background and a solid foundation in math and computer engineering/science with a minimum bachelor’s degree in ECE or CS and a high GPA. Candidates with an MS degree and strong background in computer systems (including virtualization, operating systems, distributed systems) will be given preference. 
