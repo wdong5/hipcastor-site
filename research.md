@@ -11,7 +11,7 @@ permalink: /research/
 Our overarching goal is to research and develop new techniques applied to
 a diverse spectrum of computer systems (including edge, cloud and
 high-performance computing) and across layers of abstraction (including
-computer architecture, operating systems, virtualization, middleware, and
+computer architecture, operating systems, virtualization, middleware, software engineering, and
 applications). 
 
 Here are some themes and techniques that we currently work on:
@@ -40,27 +40,21 @@ to memory, for example with processing units integrated near DRAM banks. We are
 investigating new software and hardware abstractions for next-generation
 processing-in-memory (PIM) architectures. 
 
-**Software-defined virtual networks for edge-to-cloud computing.** The advent
-of virtualization and cloud computing has fundamentally changed how distributed
-applications and services are deployed and managed. With the proliferation of
-IoT and mobile devices, virtualized systems akin to those offered by cloud
-providers are increasingly needed geographically near the network’s edge to
-perform processing tasks in proximity to the data sources and sinks. While,
-within cloud data centers, nodes can communicate without the presence of
-Network Address Translators (NATs), edge computing applications require devices
-to communicate across different private networks and must deal with NAT
-traversal to enable edge-to-edge communication. We have designed and
-implemented [EdgeVPN](https://edgevpn.io), a novel technique that enables
-virtual private Ethernet networks that span edge and cloud resources
-– including those constrained by NAT and firewall middleboxes. EdgeVPN builds
-upon a scalable structured peer-to-peer overlay, and is novel in how it
-integrates overlay tunnels with Software Defined Networking (SDN) software
-switches to create a virtual network with dynamic membership – supporting
-unmodified Ethernet/IP stacks to facilitate the deployment of edge
-applications. 
-
 **Specialized system software for HPC.** We are interested in ground-up redesigns of the
 hardware/software layer for high-performance computing. In the past, we have developed new
 [operating systems](https://users.cs.northwestern.edu/~pdinda/Papers/sc21.pdf), [virtual machine monitors](https://github.com/virtines/wasp), 
 [languages](https://doi.org/10.1145/3453483.3460969), [compilers](https://dl.acm.org/doi/10.1145/3617232.3624856), and [hardware designs](https://ieeexplore.ieee.org/document/8842897) for HPC. 
 
+**Software-defined virtual networks for edge-to-cloud computing.** While
+within cloud data centers, nodes can communicate without the presence of
+Network Address Translators (NATs), edge computing applications require devices
+to communicate across different private networks and must deal with NAT
+traversal to enable edge-to-edge communication. We have designed and
+implemented [EdgeVPN](https://edgevpn.io), a technique that enables
+virtual private Ethernet networks that span edge and cloud resources
+– including those constrained by NAT and firewall middleboxes. EdgeVPN builds
+upon a scalable structured peer-to-peer overlay, and
+integrates overlay tunnels with Software Defined Networking (SDN) software
+switches to create a virtual network with dynamic membership – supporting
+unmodified Ethernet/IP stacks to facilitate the deployment of edge
+applications. 

@@ -14,6 +14,14 @@
   number_educ: 1
   education1: BS @ KJSCE, Mumbai, India (2019)
 
+
+- name: <a href=https://github.com/nolcut">Nolan Cutler</a>
+  photo: Nolan.jpg
+  info: Undergraduate Student, since 2025
+  email: cutlern@oregonstate.edu
+  number_educ: 1
+  education1: BS @ OSU, Oregon, US (2027 est.)
+
 - name: <a href="https://www.linkedin.com/in/eugenecohen">Eugene Cohen</a>
   photo: eugene.jpg
   info: MS Student, since 2025
@@ -27,3 +35,4 @@
   email: rodgerga@oregonstate.edu
   number_educ: 1
   education1: BS @ OSU, Oregon, USA (2025 est.)
+
