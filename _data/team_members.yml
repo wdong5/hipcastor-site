@@ -61,6 +61,13 @@
   number_educ: 1
   education1: MS @ NYU (2024)
 
+- name: <a href="https://www.linkedin.com/in/chia-chen-kuo">Laura Kuo</a>
+  photo: Laura.jpeg
+  info: Ph.D. student, since 2025
+  email: kuochi@oregonstate.edu
+  number_educ: 1
+  education1: BS @ U.Wisc (2025)
+
 - name: "This could be you!"
   photo: rock.jpg
   info: See <a href="../openings">openings</a> for more info
