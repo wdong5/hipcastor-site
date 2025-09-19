@@ -68,6 +68,13 @@
   number_educ: 1
   education1: BS @ U.Wisc (2025)
 
+- name: <a href="https://www.linkedin.com/in/ninadanklesaria">Ninad Anklesaria</a>
+  photo: Ninad.jpeg
+  info: Ph.D. student, since 2025
+  email: anklesan@oregonstate.edu
+  number_educ: 1
+  education1: MS @ OSU (2025)
+
 - name: "This could be you!"
   photo: rock.jpg
   info: See <a href="../openings">openings</a> for more info
