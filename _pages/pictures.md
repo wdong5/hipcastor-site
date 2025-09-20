@@ -10,6 +10,12 @@ permalink: /pictures/
 
 ## Group
 
+At Ft. Hoskins for the first pre-Fall BBQ - Summer 2025
+<figure>
+<img src="{{ site.url }}{{ site.baseurl }}/images/teampic/fthoskins-2025.jpg" width="60%">
+</figure>
+
+
 At Chip Ross Park - Spring 2025.
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/chipross-2025.jpg" width="60%">
