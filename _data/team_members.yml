@@ -75,6 +75,13 @@
   number_educ: 1
   education1: MS @ OSU (2025)
 
+- name: <a href="https://www.linkedin.com/in/kausar-moshood/">Kausar Moshood</a>
+  photo: Kausar.jpeg
+  info: Ph.D. student, since 2025
+  email: moshoodk@oregonstate.edu
+  number_educ: 1
+  education1: BS @ OUI (2023)
+
 - name: "This could be you!"
   photo: rock.jpg
   info: See <a href="../openings">openings</a> for more info
