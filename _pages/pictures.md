@@ -10,6 +10,11 @@ permalink: /pictures/
 
 ## Group
 
+The group at SC '25 in St. Louis (including incoming faculty Xin Liang and his students!)
+<figure>
+<img src="{{ site.url }}{{ site.baseurl}}/images/teampic/sc25.jpg" width="60%">
+</figure>
+
 At Ft. Hoskins for the first pre-Fall BBQ - Summer 2025
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/fthoskins-2025.jpg" width="60%">
