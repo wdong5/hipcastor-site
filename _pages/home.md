@@ -2,7 +2,7 @@
 title: "HiPCastor - Home"
 layout: homelay
 excerpt: "HiPCastor @ OSU."
-sitemap: false
+sitemap: true
 permalink: /
 ---
 

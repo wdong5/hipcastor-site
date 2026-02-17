@@ -2,7 +2,7 @@
 title: "News"
 layout: textlay
 excerpt: "HiPCastor @ OSU."
-sitemap: false
+sitemap: true
 permalink: /allnews.html
 ---
 

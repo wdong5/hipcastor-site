@@ -1,15 +1,60 @@
 ---
-title: "Allan Lab - Research"
+title: "HiPCastor - Research"
 layout: textlay
-excerpt: "Allan Lab -- Research"
-sitemap: false
+excerpt: "HiPCastor -- Research"
+sitemap: true
 permalink: /research/
 ---
 
 # Research
 
-Updating soon -- stay put. (Aug 11 2023)
+Our overarching goal is to research and develop new techniques applied to
+a diverse spectrum of computer systems (including edge, cloud and
+high-performance computing) and across layers of abstraction (including
+computer architecture, operating systems, virtualization, middleware, software engineering, and
+applications). 
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/SciPost.png){: style="width: 70%; float: center; margin: 0px"}
+Here are some themes and techniques that we currently work on:
 
+**Function-as-a-Service, serverless workflows.** Modern Function-as-a-Service
+(FaaS) cloud platforms offer great potential for supporting event-driven
+scientific workflows. Nonetheless, there remain barriers to adoption by the
+scientific community in domains such as environmental sciences, where R is the
+focal language used for the development of applications and where users are
+typically not well-versed with FaaS APIs. We have designed and implemented
+[FaaSr](https://faasr.io), a novel open-source middleware that supports
+event-driven scientific workflows in R. A key novelty in FaaSr is the ability
+to deploy workflows across FaaS providers without the need for any managed
+servers for coordination. We have also explored using lightweight per-function
+virtual machines ([virtines](https://github.com/virtines/wasp)) to enable more strongly isolated FaaS platforms.
 
+**Modern high-performance memory systems.** Modern memory systems involve
+designs aimed at surmounting the "memory wall," where memory capacity and
+bandwidth can limit workload performance. We are investigating new system
+software support for disaggregated memory, where a workload's memory is
+transparently expanded across nodes in a cluster. In particular, we developed
+a new compiler and runtime system for high-performance far memory called
+[TrackFM](https://dl.acm.org/doi/10.1145/3617232.3624856). To address memory
+bandwidth limitations, near-data processing architectures move compute nearer
+to memory, for example with processing units integrated near DRAM banks. We are
+investigating new software and hardware abstractions for next-generation
+processing-in-memory (PIM) architectures. 
+
+**Specialized system software for HPC.** We are interested in ground-up redesigns of the
+hardware/software layer for high-performance computing. In the past, we have developed new
+[operating systems](https://users.cs.northwestern.edu/~pdinda/Papers/sc21.pdf), [virtual machine monitors](https://github.com/virtines/wasp), 
+[languages](https://doi.org/10.1145/3453483.3460969), [compilers](https://dl.acm.org/doi/10.1145/3617232.3624856), and [hardware designs](https://ieeexplore.ieee.org/document/8842897) for HPC. 
+
+**Software-defined virtual networks for edge-to-cloud computing.** While
+within cloud data centers, nodes can communicate without the presence of
+Network Address Translators (NATs), edge computing applications require devices
+to communicate across different private networks and must deal with NAT
+traversal to enable edge-to-edge communication. We have designed and
+implemented [EdgeVPN](https://edgevpn.io), a technique that enables
+virtual private Ethernet networks that span edge and cloud resources
+– including those constrained by NAT and firewall middleboxes. EdgeVPN builds
+upon a scalable structured peer-to-peer overlay, and
+integrates overlay tunnels with Software Defined Networking (SDN) software
+switches to create a virtual network with dynamic membership – supporting
+unmodified Ethernet/IP stacks to facilitate the deployment of edge
+applications. 

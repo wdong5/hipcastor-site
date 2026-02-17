@@ -2,7 +2,7 @@
 title: "HiPCastor - Publications"
 layout: gridlay
 excerpt: "HiPCastor -- Publications."
-sitemap: false
+sitemap: true
 permalink: /publications/
 ---
 

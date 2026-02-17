@@ -2,7 +2,7 @@
 title: "HiPCastor - Team"
 layout: gridlay
 excerpt: "HiPCastor: Team members"
-sitemap: false
+sitemap: true
 permalink: /team/
 ---
 
@@ -24,7 +24,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" style="float: left" loading="lazy" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
   <ul style="overflow: hidden">
@@ -89,7 +89,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" style="float: left" loading="lazy" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
   <ul style="overflow: hidden">
@@ -144,7 +144,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" style="float: left" loading="lazy" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
   <ul style="overflow: hidden">
@@ -198,9 +198,9 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" style="float: left" loading="lazy" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}</i> <!-- <br>email: <{{ member.email }}></i> -->
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
@@ -253,7 +253,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" style="float: left" loading="lazy" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
   <ul style="overflow: hidden">
