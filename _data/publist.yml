@@ -1,3 +1,11 @@
+- title: "CoPPar Tree: Fast and Composable Consistency at Global Scale"
+  description: Composable geo-replicated consensus with sequential consistency
+  authors: Xincheng Yang and Kyle C. Hale
+  link:
+      url: ""
+      display: 24th IEEE International Symposium on Parallel and Distributed Computing
+  highlight: 0
+  series: ISPDC '25
 
 - title: "FaaSr: Cross-Platform Function-as-a-Service Serverless Scientific Workflows in R"
   description: This paper describes the FaaSr system for cross-platform engineless, serverlss execution of scientific workflows
