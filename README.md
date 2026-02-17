@@ -9,3 +9,7 @@ Go to *aboutwebsite.md*  to learn how to copy and modify this page for your own 
 
 Copyright 2026 HiPCastor @ OSU. Code released under MIT License.
 
+To preview run locally:
+```shell
+docker run --rm -v "$PWD:/var/jekyll" -p 4000:4000 mrxder/jekyll-docker-arm64 jekyll serve --watch --host 0.0.0.0 --baseurl "/"
+```
