@@ -53,7 +53,7 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
-## Extended Publications
+## Full Publication List
 
 {% for publi in site.data.publist %}
 
