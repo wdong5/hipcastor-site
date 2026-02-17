@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Resize and compress images in the site's images/ directory using macOS sips.
-# Operates in-place — use git to revert if needed.
+# Operates in-place -- use git to revert if needed.
 #
 # Usage:
 #   ./scripts/optimize-images.sh              # run for real
