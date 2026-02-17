@@ -11,7 +11,7 @@ permalink: /publications/
 
 ## Group highlights
 
-**Highlighted recent publications from the group; scroll down for [an extended list of publications](#extended-publications).**
+**Highlighted recent publications from the group; scroll down for [an extended list of publications](#full-publication-list).**
 
 
 {% assign number_printed = 0 %}
