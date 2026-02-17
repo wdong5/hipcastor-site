@@ -60,40 +60,40 @@ Portland is only a little more than an hour to the North.
             <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/campus-fall.jpg" alt="Slide 1" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Slide 2" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Slide 2" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Slide 3" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Slide 3" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Slide 4" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Slide 4" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Slide 5" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Slide 5" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Slide 6" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Slide 6" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Slide 7" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Slide 7" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Slide 8" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Slide 8" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Slide 9" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Slide 9" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Slide 10" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Slide 10" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Mt. Hood" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Mt. Hood" loading="lazy" />
         </div>
         <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Santiam Pass" />
+            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Santiam Pass" loading="lazy" />
         </div>
     </div>
 

@@ -55,5 +55,5 @@ OSU is the future home of the [Huang Collaborative Innovation Complex](https://l
 
 
 <figure class="fourth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/osu-logo.jpg" style="width: 210px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/osu-logo.jpg" style="width: 210px" loading="lazy">
 </figure>
