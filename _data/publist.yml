@@ -3,7 +3,7 @@
   authors: Xincheng Yang and Kyle C. Hale
   link:
       url: ""
-      display: 24th IEEE International Symposium on Parallel and Distributed Computing
+      display: Proceedings of the 24th IEEE International Symposium on Parallel and Distributed Computing
   highlight: 0
   series: ISPDC '25
 
@@ -12,7 +12,7 @@
   authors: Sungjae Park, R. Quinn Thomas, Cayelan C. Carey, Austin D. Delany, Yun-Jung Ku, Mary E. Lofton, Renato J. Figueiredo
   link:
     url: https://ieeexplore.ieee.org/document/10678660
-    display: 20th International IEEE eScience Conference, 2024
+    display: Proceedings of the 20th International IEEE eScience Conference, 2024
   highlight: 0
   series: eScience '24
 
@@ -22,7 +22,7 @@
   image: trackfm.png
   link:
     url: https://dl.acm.org/doi/10.1145/3617232.3624856
-    display: 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Vol. 1
+    display: Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Vol. 1
   series: "ASPLOS '24"
   highlight: 1
 
@@ -49,7 +49,7 @@
   authors: Eduardo Romero, Christopher Stewart, Angela Li, Kyle C. Hale, Nathaniel Morris
   link:
     url: https://dl.acm.org/doi/10.1145/3528535.3531519
-    display: 23rd ACM/IFIP International Middleware Conference, 2022
+    display: Proceedings of the 23rd ACM/IFIP International Middleware Conference, 2022
   highlight: 0
   series: Middleware '22
 
@@ -67,7 +67,7 @@
   authors: Nicholas C. Wanninger, Joshua J. Bowden, Kirtankumar Shetty, Ayush Garg, and Kyle C. Hale
   link:
     url: https://dl.acm.org/doi/abs/10.1145/3492321.3519553
-    display: 7th European Conference on Computer Systems, 2022
+    display: Proceedings of the 7th European Conference on Computer Systems, 2022
   highlight: 0
   series: EuroSys '22
 
@@ -76,7 +76,7 @@
   authors: V. Daneshmand, A. Breef-Pilz, C. Carey, Y. Jin, Y-J. Ku, K. Subratie, R. Q. Thomas, R. Figueiredo
   link:
     url: https://ieeexplore.ieee.org/document/9582387
-    display: 17th International IEEE eScience Conference, 2021
+    display: Proceedings of the 17th International IEEE eScience Conference, 2021
   highlight: 0
   series: eScience '21
 
@@ -85,7 +85,7 @@
   authors: Mike Rainey, Ryan R. Newton, Kyle C. Hale, Nikos Hardavellas, Simone Campanoni, Peter Dinda, Umut A. Acar
   link:
     url: https://dl.acm.org/doi/10.1145/3453483.3460969
-    display: 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation, 2021
+    display: Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation, 2021
   highlight: 0
   series: PLDI '21
 
@@ -94,7 +94,7 @@
   authors: Jiacheng Ma, Wenyi Wang, Aaron Nelson, Michael Cuevas, Brian Homerding, Conghao Liu, Zhen Huang, Simone Campanoni, Kyle C. Hale, and Peter Dinda
   link:
     url: https://dl.acm.org/doi/10.1145/3458817.3476183
-    display: International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
+    display: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC), 2021
   highlight: 0
   series: SC '21
 
