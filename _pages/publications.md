@@ -26,12 +26,12 @@ permalink: /publications/
 
 <div class="col-sm-6 clearfix">
  <div class="well">
-  <pubtit>{{ publi.title }}</pubtit>
+  <pubtit><a href="{{publi.link.url}}">{{ publi.title }}</a></pubtit>
   <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" loading="lazy" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
-  <kbd href="{{ publi.link.url }}">{{ publi.series }}</kbd>
-  <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
+  <kbd>{{ publi.series }}</kbd>
+  <p>In {{ publi.link.display }}</p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
   <p> {{ publi.news2 }}</p>
  </div>
@@ -57,7 +57,7 @@ permalink: /publications/
 
 {% for publi in site.data.publist %}
 
-  <kbd> {{ publi.series }} </kbd> {{ publi.title }} <br />
-  <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
+  <kbd> {{ publi.series }} </kbd> <a href="{{ publi.link.url }}">{{ publi.title }}</a> <br />
+  <em>{{ publi.authors }} </em><br/>In {{ publi.link.display }}
 
 {% endfor %}
