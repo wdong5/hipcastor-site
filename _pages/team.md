@@ -242,9 +242,14 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
 {% endif %}
 
 
-## Alums
+## Alumni
+{% assign alumni_all = "" | split: "," %}
+{% if site.data.alumni_members %}{% assign alumni_all = alumni_all | concat: site.data.alumni_members %}{% endif %}
+{% if site.data.alumni_msc %}{% assign alumni_all = alumni_all | concat: site.data.alumni_msc %}{% endif %}
+{% if site.data.alumni_bsc %}{% assign alumni_all = alumni_all | concat: site.data.alumni_bsc %}{% endif %}
+{% if site.data.alumni_visitors %}{% assign alumni_all = alumni_all | concat: site.data.alumni_visitors %}{% endif %}
 {% assign number_printed = 0 %}
-{% for member in site.data.alumni_members %}
+{% for member in alumni_all %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
