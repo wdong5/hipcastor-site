@@ -324,6 +324,13 @@ footer p {
 
 #newsid .hpc-item {
   background: #fafafa;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease;
+}
+#newsid .hpc-item:hover {
+  background: #fff5f2;
+  border-color: rgba(215, 64, 9, 0.40);
 }
 
 #gridid .hpc-item:hover {
