@@ -94,7 +94,8 @@ pubtit {
 #gridid img { margin: 16px 22px 6px 0; border-radius: 10%; box-shadow: 2px 2px 5px #888888; }
 #gridid img.teampic { width: 120px; height: 120px; object-fit: cover; object-position: top center; }
 #homeid img { margin: 0; border-radius: 5%; box-shadow: 0 0 0 #888888; }
-#picid img { margin: 6px 3px 60px 6px; border-radius: 1%; box-shadow: 2px 2px 5px #888888; }
+#picid img { margin: 0 auto; display: block; width: 80%; border-radius: 4px; box-shadow: 2px 2px 5px #888888; }
+#picid p { text-align: center; }
 #gridid .row { margin-bottom: 24px; }
 
 /* Grid padding overrides */
