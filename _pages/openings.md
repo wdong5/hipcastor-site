@@ -35,76 +35,71 @@ around Bend. To the South is Crater Lake National Park and
 California's breathtaking Redwood forests. If you need a big city vibe,
 Portland is only a little more than an hour to the North. 
 
-<div markdown="0" id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
-    <!-- Menu -->
+<div markdown="0" id="carousel-2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
     <ol class="carousel-indicators">
-        <li data-target="#carousel-2" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-2" data-slide-to="1"></li>
-        <li data-target="#carousel-2" data-slide-to="2"></li>
-        <li data-target="#carousel-2" data-slide-to="3"></li>
-        <li data-target="#carousel-2" data-slide-to="4"></li>
-        <li data-target="#carousel-2" data-slide-to="5"></li>
-        <li data-target="#carousel-2" data-slide-to="6"></li>
-        <li data-target="#carousel-2" data-slide-to="7"></li>
-        <li data-target="#carousel-2" data-slide-to="8"></li>
-        <li data-target="#carousel-2" data-slide-to="9"></li>
-        <li data-target="#carousel-2" data-slide-to="10"></li>
-        <li data-target="#carousel-2" data-slide-to="11"></li>
-        <li data-target="#carousel-2" data-slide-to="12"></li>
-        <li data-target="#carousel-2" data-slide-to="13"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="3"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="4"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="5"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="6"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="7"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="8"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="9"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="10"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="11"></li>
+        <li data-bs-target="#carousel-2" data-bs-slide-to="12"></li>
     </ol>
-
-<!-- Items -->
     <div class="carousel-inner" markdown="0">
-        <div class="item active">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/campus-fall.jpg" alt="Slide 1" />
+        <div class="carousel-item active">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/campus-fall.jpg" alt="OSU Campus in Fall" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Slide 2" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Three Sisters" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Slide 3" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Mary's Peak" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Slide 4" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Oregon Coast" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Slide 5" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Siuslaw" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Slide 6" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Mt. Jefferson" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Slide 7" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Willamette Valley Winery" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Slide 8" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Mt. Bachelor" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Slide 9" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Bend" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Slide 10" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Painted Hills" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Slide 11" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Portland" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Mt. Hood" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Mt. Hood" loading="lazy" />
         </div>
-        <div class="item">
-            <img class = "img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Santiam Pass" loading="lazy" />
+        <div class="carousel-item">
+            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Santiam Pass" loading="lazy" />
         </div>
     </div>
-
-  <a class="left carousel-control" href="#carousel-2" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-2" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 
 

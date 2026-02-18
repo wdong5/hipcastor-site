@@ -1,118 +1,127 @@
 ---
 ---
-    
-@import "bootstrap";
 
-img { margin-bottom: 24px; 
-     margin-top: 17px; 
-    border-radius:2%;
+/* =====================================================
+   Custom styles — Bootstrap 5 loaded via CDN in head
+   ===================================================== */
+
+:root {
+  --brand-blue: #158CBA;
+  --brand-green: #28B62C;
+  --osu-orange: #d74009;
 }
 
+body {
+  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  margin-bottom: 24px;
+  margin-top: 17px;
+  border-radius: 2%;
+}
 
 body {
-	padding-top: 70px;
+  padding-top: 66px;
 }
 
 figcaption {
-    text-align: right;
-    margin-top: -20px;
-    margin-bottom: 20px;
+  text-align: right;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
-
-
-
-/* Top navigation bar */
-
 
 p.byline {
-	text-align: center;
-	font-size: 18px;
-	line-height: 36px;
-	margin-top: -24px;
-	margin-bottom: 48px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+  margin-top: -24px;
+  margin-bottom: 48px;
 }
-
 
 pubtit {
-	font-weight: bold;
-}
-
-firstp {
+  font-weight: bold;
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1000px; /* or 950px */
+  max-width: 1000px;
 }
 
 /* Home, News */
 #newsid p {
-	text-align: left;
+  text-align: left;
 }
 
 #homeidtmp h1 {
-	text-align: center;
+  text-align: center;
 }
 
 #newsid img {
-	margin-top: 6px;
-	margin-bottom: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 /* Team & Publications */
-#gridid img { margin: 16px 22px 6px 0; border-radius:10%; box-shadow: 2px 2px 5px #888888 }
+#gridid img { margin: 16px 22px 6px 0; border-radius: 10%; box-shadow: 2px 2px 5px #888888; }
 #gridid img.teampic { width: 120px; height: 120px; object-fit: cover; object-position: top center; }
-#homeid img { margin: 0 0 0 0; border-radius:5%; box-shadow: 0px 0px 0px #888888 }
-#picid img { margin: 6px 3px 60px 6px; border-radius:1%; box-shadow: 2px 2px 5px #888888 }
-#gridid .row { margin-bottom: 24px; }
+#homeid img { margin: 0; border-radius: 5%; box-shadow: 0 0 0 #888888; }
+#picid img { margin: 6px 3px 60px 6px; border-radius: 1%; box-shadow: 2px 2px 5px #888888; }
+#gridid .row { margin-bottom: 24px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+#gridid .row:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10); }
 
-
-/* Grid overrides */
+/* Grid padding overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
 .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-	padding-left: 16px;
-	padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-/* Grid overrides */
 .col-sm-4 {
-	padding-left: 26px;
-	padding-right: 26px;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
+/* Navbar — height driven by the 34px OSU logo, equal padding above/below */
+.navbar {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 34px;
+}
 
-/* Carusel */
-
+/* Carousel */
 .carousel {
-    border-radius: 3px 3px 3px 3px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+  border-radius: 3px;
+  margin: 20px 30px;
 }
-.carousel-inner > .item > img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+
+.carousel-inner > .carousel-item > img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 kbd,
 .kbd {
-    margin: 0px 0.1em;
-    padding: 0.1em 0.3em;
-    border-radius: 3px;
-    border: 2px solid rgb(0, 0, 0);
-    background-color: #f0ccc0;
-    color: #000;
-    line-height: 1.1;
-    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
-    font-size: 14px;
-    display: inline-block;
-    box-shadow: 0px 1px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 1px #ffffff;
-    -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
-    -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 1px #ffffff inset;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    text-shadow: 0 0px 0 #ffffff;
+  margin: 0 0.1em;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #f0ccc0;
+  color: #000;
+  line-height: 1.1;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px #ffffff;
 }

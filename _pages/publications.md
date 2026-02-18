@@ -25,9 +25,9 @@ permalink: /publications/
 {% endif %}
 
 <div class="col-sm-6 clearfix">
- <div class="well">
+ <div class="card p-3">
   <pubtit><a href="{{publi.link.url}}">{{ publi.title }}</a></pubtit>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-responsive" width="33%" style="float: left" loading="lazy" alt="{{ publi.title }}" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/pubpic/{{ publi.image }}" class="img-fluid" width="33%" style="float: left" loading="lazy" alt="{{ publi.title }}" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
   <kbd>{{ publi.series }}</kbd>
