@@ -121,13 +121,30 @@ pubtit {
   padding-bottom: 0;
 }
 .navbar .nav-link {
-  padding-top: 0;
-  padding-bottom: 0;
-  color: var(--osu-orange);
+  position: relative;
+  padding: 0 0.6rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0.35rem;
+  right: 0.35rem;
+  height: 2px;
+  background-color: var(--osu-orange);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.22s ease;
 }
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: rgba(215, 64, 9, 0.70);
+  color: var(--osu-orange);
+}
+.navbar .nav-link:hover::after,
+.navbar .nav-link:focus::after {
+  clip-path: inset(0 0% 0 0);
 }
 .navbar .navbar-brand img {
   margin: 0;
