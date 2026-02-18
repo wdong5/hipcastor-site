@@ -160,12 +160,6 @@ kbd,
   transform: translateY(0);
 }
 
-/* stagger siblings so they don't all appear at once */
-.hpc-card:nth-child(2) { transition-delay: 80ms; }
-.hpc-card:nth-child(3) { transition-delay: 160ms; }
-.hpc-card:nth-child(4) { transition-delay: 240ms; }
-.hpc-card.revealed { transition-delay: 0s; }
-
 /* hover lift — only after revealed so it doesn't fight the initial animation */
 .hpc-card.revealed:hover {
   transform: translateY(-4px);

@@ -27,7 +27,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
   <div class="hpc-card">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}</i> <!-- email: {{ member.email }} -->
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
@@ -94,7 +94,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
   <div class="hpc-card">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}</i> <!-- email: {{ member.email }} -->
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
@@ -151,7 +151,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
   <div class="hpc-card">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}</i> <!-- email: {{ member.email }} -->
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
@@ -269,7 +269,7 @@ Jump to [members](#members) or [masters and undergrad students](#masters-and-und
   <div class="hpc-card">
   <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }}</i> <!-- email: {{ member.email }} -->
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
