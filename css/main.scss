@@ -12,7 +12,13 @@
 }
 
 body {
-  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 html {
@@ -114,14 +120,15 @@ pubtit {
 kbd,
 .kbd {
   margin: 0 0.1em;
-  padding: 0.1em 0.3em;
-  border-radius: 3px;
-  border: 2px solid rgb(0, 0, 0);
-  background-color: #f0ccc0;
-  color: #000;
-  line-height: 1.1;
-  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
-  font-size: 14px;
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  border: 1.5px solid rgba(215, 64, 9, 0.40);
+  background-color: rgba(215, 64, 9, 0.06);
+  color: var(--osu-orange);
+  line-height: 1.2;
+  font-family: "JetBrains Mono", "Lucida Console", monospace;
+  font-size: 13px;
   display: inline-block;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px #ffffff;
+  box-shadow: none;
+  font-weight: 400;
 }
