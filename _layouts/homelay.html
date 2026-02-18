@@ -2,11 +2,14 @@
 layout: default
 ---
 
-  <div id="homeid" class="col-sm-8">
-        <h1>Welcome to HiPCastor @ Oregon State University</h1>
+<div id="homeid" class="col-sm-12">
+  <h1>Welcome to HiPCastor @ Oregon State University</h1>
 
-	{{ content }}
+  <div class="hpc-card mb-4">
+    {{ content }}
   </div>
-  <div id="newsid" class="col-sm-4" >
-	{% include news.html %}
+
+  <div id="newsid">
+    {% include news.html %}
   </div>
+</div>
