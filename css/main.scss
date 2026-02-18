@@ -141,16 +141,18 @@ kbd,
   background: #fff;
   margin-bottom: 1.25rem;
 
-  /* scroll-reveal: start hidden */
-  opacity: 0;
-  transform: translateY(20px);
-
   /* all transitions combined */
   transition:
     opacity 0.45s ease,
     transform 0.45s ease,
     box-shadow 0.22s ease,
     border-color 0.22s ease;
+}
+
+/* scroll-reveal: only hide if JS is active */
+.js-loaded .hpc-card {
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 /* revealed by IntersectionObserver */
@@ -163,6 +165,7 @@ kbd,
 .hpc-card:nth-child(2) { transition-delay: 80ms; }
 .hpc-card:nth-child(3) { transition-delay: 160ms; }
 .hpc-card:nth-child(4) { transition-delay: 240ms; }
+.hpc-card.revealed { transition-delay: 0s; }
 
 /* hover lift — only after revealed so it doesn't fight the initial animation */
 .hpc-card.revealed:hover {
