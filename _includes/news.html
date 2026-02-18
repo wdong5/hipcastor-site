@@ -1,6 +1,6 @@
-<div class="hpc-card">
-  <h4>News</h4>
+<h2>News</h2>
 
+<div class="hpc-card">
   {% for article in site.data.news limit:9 %}
   <div class="hpc-item">
     <p class="mb-1"><strong>{{ article.date }}</strong></p>
@@ -8,5 +8,7 @@
   </div>
   {% endfor %}
 
-  <p class="mt-2 mb-0"><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></p>
+  <div class="text-center mt-3">
+    <a href="{{ site.url }}{{ site.baseurl }}/allnews.html" class="hpc-arrow-link">See all news</a>
+  </div>
 </div>

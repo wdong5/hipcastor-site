@@ -135,6 +135,13 @@ pubtit {
   display: block;
 }
 
+.hpc-splash-logo {
+  height: 120px;
+  width: auto;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+}
+
 /* Carousel */
 .carousel {
   border-radius: 3px;
@@ -202,10 +209,44 @@ kbd,
   box-shadow: 0 6px 20px rgba(215, 64, 9, 0.15);
 }
 
-/* Clickable publication highlight cards */
+/* Clickable publication cards */
 .hpc-pub-card {
   position: relative;
   cursor: pointer;
+}
+
+.hpc-item pubtit {
+  margin-bottom: 0.15rem;
+}
+
+/* Collapse phantom <p> Kramdown wraps around stretched-link */
+.hpc-pub-card > p:has(> a.stretched-link) {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+/* Arrow-style navigation link */
+.hpc-arrow-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: var(--osu-orange);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.hpc-arrow-link::after {
+  content: "→";
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+.hpc-arrow-link:hover {
+  color: var(--osu-orange);
+  text-decoration: none;
+}
+.hpc-arrow-link:hover::after {
+  transform: translateX(4px);
 }
 
 /* News item rows — styled like cards but always visible, no reveal animation */
@@ -215,4 +256,18 @@ kbd,
   padding: 0.75rem 1rem;
   background: #fff;
   margin-bottom: 0.5rem;
+  transition:
+    box-shadow 0.22s ease,
+    border-color 0.22s ease,
+    transform 0.22s ease;
+}
+
+#newsid .hpc-item {
+  background: #f7f7f8;
+}
+
+#gridid .hpc-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--osu-orange);
+  box-shadow: 0 4px 14px rgba(215, 64, 9, 0.13);
 }

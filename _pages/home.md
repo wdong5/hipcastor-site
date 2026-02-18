@@ -6,9 +6,8 @@ sitemap: true
 permalink: /
 ---
 
-**News: We are a new research group at Oregon State (OSU)!** 
-We are the High-Performance Computing and Systems at Oregon State (HiPCastor), affiliated
-with the [School of EECS](https://engineering.oregonstate.edu/EECS) at [OSU](https://oregonstate.edu). 
+We are the <u>Hi</u>gh-<u>P</u>erformance <u>C</u>omputing <u>a</u>nd <u>S</u>ys<u>t</u>ems at <u>Or</u>egon State (<b>HiPCastor</b>), affiliated
+with the [School of EECS](https://engineering.oregonstate.edu/EECS) at [Oregon State University](https://oregonstate.edu). 
 
 
 Our members focus on [various aspects of systems and HPC research]({{ site.url }}{{ site.baseurl }}/research), including
@@ -22,4 +21,8 @@ love to build real things (and systems).
 OSU is the future home of the [Huang Collaborative Innovation Complex](https://leadership.oregonstate.edu/huang-cic). The complex will harness one of the nation’s most powerful supercomputers and a cleanroom to advance research and learning in artificial intelligence, robotics and materials science.
 
 
- **We are  looking for passionate new PhD students, undergrads, and Masters students to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/openings)**!**
+**We are looking for passionate new PhD students, undergrads, and Masters students to join the team!**
+
+<div class="text-center mt-3">
+  <a href="{{ site.url }}{{ site.baseurl }}/openings" class="hpc-arrow-link">See openings</a>
+</div>

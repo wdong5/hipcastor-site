@@ -35,8 +35,16 @@ permalink: /publications/
 ## Full Publication List
 
 {% for publi in site.data.publist %}
-
-  <kbd> {{ publi.series }} </kbd> <a href="{{ publi.link.url }}">{{ publi.title }}</a> <br />
-  <em>{{ publi.authors }} </em><br/>In {{ publi.link.display }}
-
+{% if publi.link.url != "" %}
+<div class="hpc-item hpc-pub-card">
+  <a href="{{ publi.link.url }}" class="stretched-link"></a>
+  <pubtit>{{ publi.title }}</pubtit>
+  <p class="mb-0"><kbd>{{ publi.series }}</kbd> &middot; <em>{{ publi.authors }}</em></p>
+</div>
+{% else %}
+<div class="hpc-item">
+  <pubtit>{{ publi.title }}</pubtit>
+  <p class="mb-0"><kbd>{{ publi.series }}</kbd> &middot; <em>{{ publi.authors }}</em></p>
+</div>
+{% endif %}
 {% endfor %}
