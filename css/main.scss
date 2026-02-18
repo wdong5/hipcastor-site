@@ -75,8 +75,7 @@ pubtit {
 #gridid img.teampic { width: 120px; height: 120px; object-fit: cover; object-position: top center; }
 #homeid img { margin: 0; border-radius: 5%; box-shadow: 0 0 0 #888888; }
 #picid img { margin: 6px 3px 60px 6px; border-radius: 1%; box-shadow: 2px 2px 5px #888888; }
-#gridid .row { margin-bottom: 24px; transition: transform 0.15s ease, box-shadow 0.15s ease; }
-#gridid .row:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10); }
+#gridid .row { margin-bottom: 24px; }
 
 /* Grid padding overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
