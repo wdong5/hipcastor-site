@@ -10,8 +10,6 @@ permalink: /
 We are the High-Performance Computing and Systems at Oregon State (HiPCastor), affiliated
 with the [School of EECS](https://engineering.oregonstate.edu/EECS) at [OSU](https://oregonstate.edu). 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/logo.jpg" alt="HiPCastor Group" class="img-fluid" />
-
 
 Our members focus on [various aspects of systems and HPC research]({{ site.url }}{{ site.baseurl }}/research), including
 distributed systems, serverless computing, computer architecture, operating systems,

@@ -89,16 +89,30 @@ pubtit {
   padding-right: 26px;
 }
 
-/* Navbar — height driven by the 34px OSU logo, equal padding above/below */
+/* Navbar — white with card-matching border, logo height sets the rhythm */
 .navbar {
+  background-color: #fff;
+  border-bottom: 1.5px solid rgba(215, 64, 9, 0.30);
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.navbar .navbar-brand,
+.navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .navbar .nav-link {
   padding-top: 0;
   padding-bottom: 0;
-  line-height: 34px;
+  color: var(--osu-orange);
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: rgba(215, 64, 9, 0.70);
+}
+.navbar .navbar-brand img {
+  margin: 0;
+  border-radius: 0;
+  display: block;
 }
 
 /* Carousel */
