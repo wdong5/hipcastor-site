@@ -243,6 +243,23 @@ kbd,
   line-height: 0;
 }
 
+/* Footer */
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #999;
+  font-size: 0.875rem;
+}
+footer a {
+  color: #999;
+}
+footer .row {
+  align-items: center;
+}
+footer p {
+  margin-bottom: 0;
+}
+
 /* Arrow-style navigation link */
 .hpc-arrow-link {
   display: inline-flex;
