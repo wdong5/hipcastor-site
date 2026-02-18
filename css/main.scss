@@ -60,7 +60,9 @@ p.byline {
 }
 
 pubtit {
-  font-weight: bold;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .container-fluid {
@@ -170,6 +172,7 @@ kbd,
   border-radius: 10px;
   padding: 1.5rem;
   background: #fff;
+  margin-top: 0.75rem;
   margin-bottom: 1.25rem;
 
   /* all transitions combined */
@@ -197,6 +200,12 @@ kbd,
   transform: translateY(-4px);
   border-color: var(--osu-orange);
   box-shadow: 0 6px 20px rgba(215, 64, 9, 0.15);
+}
+
+/* Clickable publication highlight cards */
+.hpc-pub-card {
+  position: relative;
+  cursor: pointer;
 }
 
 /* News item rows — styled like cards but always visible, no reveal animation */
