@@ -23,8 +23,3 @@ OSU is the future home of the [Huang Collaborative Innovation Complex](https://l
 
 
  **We are  looking for passionate new PhD students, undergrads, and Masters students to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/openings)**!**
-
-
-<figure class="fourth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/osu-logo.jpg" style="width: 210px" loading="lazy">
-</figure>

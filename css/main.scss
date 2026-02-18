@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -92,7 +97,7 @@ pubtit {
 /* Navbar — white with card-matching border, logo height sets the rhythm */
 .navbar {
   background-color: #fff;
-  border-bottom: 1.5px solid rgba(215, 64, 9, 0.30);
+  border-bottom: 1.5px solid #dee2e6;
   padding-top: 8px;
   padding-bottom: 8px;
 }
