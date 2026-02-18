@@ -7,11 +7,11 @@ permalink: /publications/
 ---
 
 
-# Publications
-
 ## Group highlights
 
-**Highlighted recent publications from the group; scroll down for [an extended list of publications](#full-publication-list).**
+Highlighted recent publications from the group.
+
+<a href="#full-publication-list" class="hpc-arrow-link">All publications</a>
 
 
 {% for publi in site.data.publist %}
