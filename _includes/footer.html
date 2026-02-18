@@ -37,6 +37,28 @@
       observer.observe(el);
     });
   })();
+
+  (function () {
+    var BATCH = 5;
+    var card = document.getElementById('news-card');
+    if (!card) return;
+
+    var items = Array.from(card.querySelectorAll('.hpc-item'));
+    if (items.length <= BATCH) return;
+
+    var shown = BATCH;
+    items.slice(shown).forEach(function (el) { el.hidden = true; });
+
+    var sentinel = document.getElementById('news-sentinel');
+    var observer = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      items.slice(shown, shown + BATCH).forEach(function (el) { el.hidden = false; });
+      shown += BATCH;
+      if (shown >= items.length) observer.disconnect();
+    }, { threshold: 1.0 });
+
+    observer.observe(sentinel);
+  })();
 </script>
 
 <script defer
