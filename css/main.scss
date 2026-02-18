@@ -129,3 +129,44 @@ kbd,
   box-shadow: none;
   font-weight: 400;
 }
+
+/* =====================================================
+   HPC Cards — OSU orange bordered, scroll-reveal
+   ===================================================== */
+
+.hpc-card {
+  border: 1.5px solid rgba(215, 64, 9, 0.30);
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: #fff;
+  margin-bottom: 1.25rem;
+
+  /* scroll-reveal: start hidden */
+  opacity: 0;
+  transform: translateY(20px);
+
+  /* all transitions combined */
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+/* revealed by IntersectionObserver */
+.hpc-card.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger siblings so they don't all appear at once */
+.hpc-card:nth-child(2) { transition-delay: 80ms; }
+.hpc-card:nth-child(3) { transition-delay: 160ms; }
+.hpc-card:nth-child(4) { transition-delay: 240ms; }
+
+/* hover lift — only after revealed so it doesn't fight the initial animation */
+.hpc-card.revealed:hover {
+  transform: translateY(-4px);
+  border-color: var(--osu-orange);
+  box-shadow: 0 6px 20px rgba(215, 64, 9, 0.15);
+}
