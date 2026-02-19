@@ -34,15 +34,15 @@ permalink: /publications/
 
 {% for publi in site.data.publist %}
 {% if publi.link.url != "" %}
-<div class="hpc-item hpc-pub-card">
+<div class="hpc-item hpc-pub-card" markdown="0">
   <a href="{{ publi.link.url }}" class="stretched-link"></a>
   <pubtit>{{ publi.title }}</pubtit>
-  <p class="mb-0"><kbd>{{ publi.series }}</kbd> &middot; <em>{{ publi.authors }}</em></p>
+  <p class="mb-0"><kbd>{{ publi.series }}</kbd> <em>{{ publi.authors }}</em></p>
 </div>
 {% else %}
-<div class="hpc-item">
+<div class="hpc-item" markdown="0">
   <pubtit>{{ publi.title }}</pubtit>
-  <p class="mb-0"><kbd>{{ publi.series }}</kbd> &middot; <em>{{ publi.authors }}</em></p>
+  <p class="mb-0"><kbd>{{ publi.series }}</kbd> <em>{{ publi.authors }}</em></p>
 </div>
 {% endif %}
 {% endfor %}

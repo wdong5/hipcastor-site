@@ -323,6 +323,16 @@ kbd,
   margin-bottom: 0.15rem;
 }
 
+/* Suppress bullets Kramdown generates when mixing inline+block HTML in GFM mode */
+.hpc-item ul, .hpc-item ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.hpc-item li {
+  list-style: none;
+}
+
 /* Collapse phantom <p> Kramdown wraps around stretched-link */
 .hpc-pub-card > p:has(> a.stretched-link) {
   margin: 0;
