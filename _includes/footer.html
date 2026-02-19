@@ -47,7 +47,7 @@
   });
 
   (function () {
-    var BATCH = 5;
+    var BATCH = 4;
     var card = document.getElementById('news-card');
     if (!card) return;
 
@@ -55,17 +55,23 @@
     if (items.length <= BATCH) return;
 
     var shown = BATCH;
-    items.slice(shown).forEach(function (el) { el.hidden = true; });
+    items.slice(shown).forEach(function (el) { el.style.display = 'none'; });
 
-    var sentinel = document.getElementById('news-sentinel');
-    var observer = new IntersectionObserver(function (entries) {
-      if (!entries[0].isIntersecting) return;
-      items.slice(shown, shown + BATCH).forEach(function (el) { el.hidden = false; });
+    /* If the page is too short to scroll, show everything immediately */
+    if (document.documentElement.scrollHeight <= window.innerHeight + 50) {
+      items.forEach(function (el) { el.style.display = ''; });
+      return;
+    }
+
+    function onScroll() {
+      var remaining = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+      if (remaining > 300) return;
+      items.slice(shown, shown + BATCH).forEach(function (el) { el.style.display = ''; });
       shown += BATCH;
-      if (shown >= items.length) observer.disconnect();
-    }, { threshold: 1.0 });
+      if (shown >= items.length) window.removeEventListener('scroll', onScroll);
+    }
 
-    observer.observe(sentinel);
+    window.addEventListener('scroll', onScroll, { passive: true });
   })();
 </script>
 
