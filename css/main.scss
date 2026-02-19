@@ -470,6 +470,7 @@ footer p {
 
 #newsid .hpc-item {
   background: #fafafa;
+  will-change: auto; /* override base .hpc-item — news items never animate transforms */
   transition:
     background 0.18s ease,
     border-color 0.18s ease;

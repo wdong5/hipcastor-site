@@ -63,12 +63,18 @@
       return;
     }
 
+    var scrollPending = false;
     function onScroll() {
-      var remaining = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
-      if (remaining > 300) return;
-      items.slice(shown, shown + BATCH).forEach(function (el) { el.style.display = ''; });
-      shown += BATCH;
-      if (shown >= items.length) window.removeEventListener('scroll', onScroll);
+      if (scrollPending) return;
+      scrollPending = true;
+      requestAnimationFrame(function () {
+        scrollPending = false;
+        var remaining = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
+        if (remaining > 300) return;
+        items.slice(shown, shown + BATCH).forEach(function (el) { el.style.display = ''; });
+        shown += BATCH;
+        if (shown >= items.length) window.removeEventListener('scroll', onScroll);
+      });
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
