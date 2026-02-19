@@ -6,13 +6,11 @@ sitemap: true
 permalink: /research/
 ---
 
-# Research
-
 Our overarching goal is to research and develop new techniques applied to
 a diverse spectrum of computer systems (including edge, cloud and
 high-performance computing) and across layers of abstraction (including
 computer architecture, operating systems, virtualization, middleware, software engineering, and
-applications). 
+applications).
 
 Here are some themes and techniques that we currently work on:
 
@@ -43,15 +41,15 @@ far memory called [TrackFM](https://dl.acm.org/doi/10.1145/3617232.3624856). To
 address memory bandwidth limitations, near-data processing architectures move
 compute nearer to memory, for example with processing units integrated near
 DRAM banks. We are investigating new software and hardware abstractions for
-next-generation processing-in-memory (PIM) architectures. 
+next-generation processing-in-memory (PIM) architectures.
 </div>
 
 ## System Software for HPC
 <div class="hpc-card">
 We are interested in ground-up redesigns of the
 hardware/software layer for high-performance computing. In the past, we have developed new
-[operating systems](https://users.cs.northwestern.edu/~pdinda/Papers/sc21.pdf), [virtual machine monitors](https://github.com/virtines/wasp), 
-[languages](https://doi.org/10.1145/3453483.3460969), [compilers](https://dl.acm.org/doi/10.1145/3617232.3624856), and [hardware designs](https://ieeexplore.ieee.org/document/8842897) for HPC. 
+[operating systems](https://users.cs.northwestern.edu/~pdinda/Papers/sc21.pdf), [virtual machine monitors](https://github.com/virtines/wasp),
+[languages](https://doi.org/10.1145/3453483.3460969), [compilers](https://dl.acm.org/doi/10.1145/3617232.3624856), and [hardware designs](https://ieeexplore.ieee.org/document/8842897) for HPC.
 </div>
 
 ## Software-defined virtual networks for edge-to-cloud computing
@@ -67,5 +65,5 @@ upon a scalable structured peer-to-peer overlay, and
 integrates overlay tunnels with Software Defined Networking (SDN) software
 switches to create a virtual network with dynamic membership – supporting
 unmodified Ethernet/IP stacks to facilitate the deployment of edge
-applications. 
+applications.
 </div>

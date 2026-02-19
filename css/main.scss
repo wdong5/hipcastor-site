@@ -408,3 +408,29 @@ footer p {
   border-color: var(--osu-orange);
   box-shadow: 0 4px 14px rgba(215, 64, 9, 0.13);
 }
+
+/* textlay pages — cards auto-cycle through accent colors, no manual class needed.
+   nth-of-type works because .hpc-card divs are the only div children of #textid. */
+#textid div:nth-of-type(4n+1) { border-color: rgba(215, 64, 9, 0.30); }
+#textid div:nth-of-type(4n+1).revealed:hover {
+  border-color: var(--osu-orange);
+  box-shadow: 0 6px 20px rgba(215, 64, 9, 0.15);
+}
+
+#textid div:nth-of-type(4n+2) { border-color: rgba(21, 101, 192, 0.30); }
+#textid div:nth-of-type(4n+2).revealed:hover {
+  border-color: #1565c0;
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.15);
+}
+
+#textid div:nth-of-type(4n+3) { border-color: rgba(109, 40, 217, 0.30); }
+#textid div:nth-of-type(4n+3).revealed:hover {
+  border-color: #6d28d9;
+  box-shadow: 0 6px 20px rgba(109, 40, 217, 0.15);
+}
+
+#textid div:nth-of-type(4n) { border-color: rgba(8, 145, 178, 0.30); }
+#textid div:nth-of-type(4n).revealed:hover {
+  border-color: #0891b2;
+  box-shadow: 0 6px 20px rgba(8, 145, 178, 0.15);
+}
