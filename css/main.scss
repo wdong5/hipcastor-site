@@ -335,6 +335,10 @@ kbd,
   margin-bottom: 0.15rem;
 }
 
+.hpc-card pubtit {
+  text-align: center;
+}
+
 /* Suppress bullets Kramdown generates when mixing inline+block HTML in GFM mode */
 .hpc-item ul, .hpc-item ol {
   list-style: none;
