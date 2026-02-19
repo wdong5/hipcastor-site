@@ -69,7 +69,11 @@ applications.
 
 ## Software
 <div class="hpc-card">
-Coming soon!
+- [EdgeVPN](https://github.com/edgevpnio) - VPN at the edge
+- [FaaSr](https://github.com/FaaSr) - Function-as-a-Service for R
+- [Shipyard](https://github.com/xyang76/shipyard) - Load balanced, sharded consensus
+- [TrackFM compiler](https://github.com/compiler-disagg/TrackFM) - automated far memory for legacy apps
+- [Wasp](https://github.com/virtines/wasp) - a microhypervisor for function-granularity virtualization
 </div>
 
 ## Sponsors
