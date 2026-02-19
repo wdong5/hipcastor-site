@@ -138,6 +138,8 @@
       return { x: x * sw * SCALE + CX, y: y * sw * SCALE + CY, d: sw };
     }
 
+    var rafId = null;
+
     function frame(ts) {
       var t   = ts * 0.001;
       var pts = verts.map(function (v) { return project(v, t); });
@@ -177,10 +179,18 @@
         el.setAttribute('fill-opacity', Math.min(1, 0.4 + p.d * 0.32).toFixed(2));
       });
 
-      requestAnimationFrame(frame);
+      rafId = requestAnimationFrame(frame);
     }
 
-    requestAnimationFrame(frame);
+    rafId = requestAnimationFrame(frame);
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        cancelAnimationFrame(rafId);
+      } else {
+        rafId = requestAnimationFrame(frame);
+      }
+    });
   }());
 </script>
 
