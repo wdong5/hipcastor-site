@@ -19,7 +19,7 @@ permalink: /team/
 {% if site.data.alumni_bsc %}{% assign alumni_all = alumni_all | concat: site.data.alumni_bsc %}{% endif %}
 {% if site.data.alumni_visitors %}{% assign alumni_all = alumni_all | concat: site.data.alumni_visitors %}{% endif %}
 
-<div class="hpc-pill-nav">
+<div class="hpc-pill-nav" markdown="0">
   {% if site.data.faculty.size > 0 %}<a href="#faculty" class="hpc-pill">Faculty</a>{% endif %}
   {% if site.data.phd_students.size > 0 %}<a href="#phd-students" class="hpc-pill">PhD Students</a>{% endif %}
   {% if site.data.students.size > 0 %}<a href="#masters-and-undergraduate-students" class="hpc-pill">Masters &amp; Undergrads</a>{% endif %}

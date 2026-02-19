@@ -31,9 +31,10 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.08, rootMargin: '0px 0px 120px 0px' });
 
     document.querySelectorAll('.hpc-card, #gridid .hpc-item, .hpc-pic-card').forEach(function (el) {
+      if (el.closest('#textid')) { el.classList.add('revealed'); return; }
       observer.observe(el);
     });
   })();
