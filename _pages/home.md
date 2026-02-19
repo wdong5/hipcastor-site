@@ -6,7 +6,7 @@ sitemap: true
 permalink: /
 ---
 
-We are the <u>Hi</u>gh-<u>P</u>erformance <u>C</u>omputing <u>a</u>nd <u>S</u>ys<u>t</u>ems at <u>Or</u>egon State (<b>HiPCastor</b>), affiliated
+We are the <u>Hi</u>gh-<u>P</u>erformance <u>C</u>omputing <u>a</u>nd <u>S</u>ys<u>t</u>ems at <u>Or</u>egon State (<b>HiPCastor</b>) group, affiliated
 with the [School of EECS](https://engineering.oregonstate.edu/EECS) at [Oregon State University](https://oregonstate.edu). 
 
 

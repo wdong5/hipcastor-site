@@ -14,7 +14,8 @@
 body {
   font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  padding-top: 66px;
+  margin-top: 3rem;
+  padding-top: 3rem;
   background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(215, 64, 9, 0.12) 0%, #ffffff 70%);
   background-attachment: fixed;
 }
@@ -85,6 +86,14 @@ pubtit {
 }
 
 /* Home, News */
+#homeid h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 4.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
 #homeid {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -127,10 +136,12 @@ pubtit {
 
 /* Navbar — white with card-matching border, logo height sets the rhythm */
 .navbar {
+  --bs-navbar-padding-y: 0;
   background-color: #fff;
   border-bottom: 1.5px solid #dee2e6;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .navbar .navbar-brand {
   padding-top: 0;
@@ -167,6 +178,7 @@ pubtit {
   border-radius: 0;
   display: block;
 }
+
 
 .hpc-splash-logo {
   height: 120px;
@@ -445,4 +457,17 @@ footer p {
 #textid div:nth-of-type(4n).revealed:hover {
   border-color: #0891b2;
   box-shadow: 0 6px 20px rgba(8, 145, 178, 0.15);
+}
+
+/* =====================================================
+   Hypercube topology diagram — replaces @ in home title
+   All geometry is drawn by tesseract.js via rAF.
+   ===================================================== */
+.hpc-topology {
+  display: inline-block;
+  vertical-align: middle;
+  width: 82px;
+  height: 65px; /* matches 100:80 viewBox ratio; fixed so it doesn't scale with font-size */
+  margin: 0 0.2em;
+  overflow: visible;
 }
