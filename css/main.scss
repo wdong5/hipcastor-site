@@ -611,3 +611,28 @@ footer p {
   font-size: 0.875rem;
   line-height: 1.4;
 }
+
+/* =====================================================
+   Rolling hills — two demo placements (navbar + fixed)
+   ===================================================== */
+
+/* --- Fixed hills at viewport bottom --- */
+.treeline-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: clamp(80px, 14vw, 180px);
+  background: url("../images/treeline.svg") center bottom / cover no-repeat;
+  opacity: 0.30;
+  pointer-events: none;
+  z-index: -1;
+  transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .treeline-nav,
+  .treeline-fixed {
+    transition: none;
+  }
+}
