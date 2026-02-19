@@ -357,6 +357,28 @@ kbd,
   line-height: 0;
 }
 
+/* Sponsor logos */
+.hpc-sponsor-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0.5rem 0;
+}
+.hpc-sponsor-logo {
+  height: 72px;
+  width: auto;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+  opacity: 0.85;
+  transition: opacity 0.18s ease;
+}
+.hpc-sponsor-logo:hover {
+  opacity: 1;
+}
+
 /* Footer */
 footer {
   padding-top: 1rem;
