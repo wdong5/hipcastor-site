@@ -389,6 +389,20 @@ kbd,
   opacity: 1;
 }
 
+/* Respect reduced-motion preference — disable scroll-reveal animations */
+@media (prefers-reduced-motion: reduce) {
+  .hpc-card, .hpc-item {
+    transition: none;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .js-loaded .hpc-card,
+  .js-loaded #gridid .hpc-item {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Footer */
 footer {
   padding-top: 1rem;
