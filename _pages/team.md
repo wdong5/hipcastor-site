@@ -20,17 +20,18 @@ permalink: /team/
 {% if site.data.alumni_visitors %}{% assign alumni_all = alumni_all | concat: site.data.alumni_visitors %}{% endif %}
 
 <div class="hpc-pill-nav">
-  {% if site.data.team_members.size > 0 %}<a href="#members" class="hpc-pill">Faculty</a>{% endif %}
+  {% if site.data.faculty.size > 0 %}<a href="#faculty" class="hpc-pill">Faculty</a>{% endif %}
+  {% if site.data.phd_students.size > 0 %}<a href="#phd-students" class="hpc-pill">PhD Students</a>{% endif %}
   {% if site.data.students.size > 0 %}<a href="#masters-and-undergraduate-students" class="hpc-pill">Masters &amp; Undergrads</a>{% endif %}
   {% if site.data.opensource.size > 0 %}<a href="#open-source-contributors" class="hpc-pill">Open Source</a>{% endif %}
   {% if site.data.incoming.size > 0 %}<a href="#incoming-members" class="hpc-pill">Incoming</a>{% endif %}
   {% if alumni_all.size > 0 %}<a href="#alumni" class="hpc-pill">Alumni</a>{% endif %}
 </div>
 
-{% if site.data.team_members.size > 0 %}
-## Members
+{% if site.data.faculty.size > 0 %}
+## Faculty
 {% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
+{% for member in site.data.faculty %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
@@ -69,6 +70,54 @@ permalink: /team/
   <li> {{ member.education3 }} </li>
   <li> {{ member.education4 }} </li>
   <li> {{ member.education5 }} </li>
+  {% endif %}
+  </ul>
+  </div>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+{% endif %}
+
+{% if site.data.phd_students.size > 0 %}
+## PhD Students
+{% assign number_printed = 0 %}
+{% for member in site.data.phd_students %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}{% if forloop.last %}<div class="row justify-content-center">{% else %}<div class="row">{% endif %}
+{% endif %}
+
+<div class="col-sm-6 clearfix">
+  {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
+  <div class="hpc-card">
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" />
+  <h4>{{ member.name | strip_html }}</h4>
+  <i>{{ member.info }}</i>
+  <ul style="overflow: hidden">
+  {% if member.number_educ == 1 %}
+  <li> {{ member.education1 }} </li>
+  {% endif %}
+  {% if member.number_educ == 2 %}
+  <li> {{ member.education1 | markdownify}} </li>
+  <li> {{ member.education2 | markdownify}} </li>
+  {% endif %}
+  {% if member.number_educ == 3 %}
+  <li> {{ member.education1 }} </li>
+  <li> {{ member.education2 }} </li>
+  <li> {{ member.education3 }} </li>
   {% endif %}
   </ul>
   </div>
