@@ -104,12 +104,14 @@ pubtit {
 }
 
 /* Team & Publications */
-#gridid img { margin: 16px 22px 6px 0; border-radius: 10%; box-shadow: 2px 2px 5px #888888; }
-#gridid img.teampic { width: 120px; height: 120px; object-fit: cover; object-position: top center; }
+#gridid img { margin: 16px 22px 6px 0; border-radius: 10%; }
+#gridid img.teampic { width: 120px; height: 120px; object-fit: cover; object-position: top center; border-radius: 50%; border: 2px solid rgba(215, 64, 9, 0.35); box-shadow: none; }
 #homeid img { margin: 0; border-radius: 5%; box-shadow: 0 0 0 #888888; }
 #picid img { margin: 0 auto; display: block; width: 80%; border-radius: 4px; box-shadow: 2px 2px 5px #888888; }
 #picid p { text-align: center; }
-#gridid .row { margin-bottom: 24px; }
+#gridid .row { margin-bottom: 24px; align-items: stretch; }
+#gridid .col-sm-6 { display: flex; }
+#gridid .col-sm-6 .hpc-card { flex: 1; padding-top: 1rem; }
 
 /* Grid padding overrides */
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6,
@@ -241,10 +243,78 @@ kbd,
   box-shadow: 0 6px 20px rgba(215, 64, 9, 0.15);
 }
 
-/* Clickable publication cards */
-.hpc-pub-card {
+/* Pill navigation buttons */
+.hpc-pill-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.75rem 0 1.25rem;
+}
+.hpc-pill {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1.5px solid rgba(215, 64, 9, 0.35);
+  color: var(--osu-orange);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.hpc-pill:hover {
+  background: var(--osu-orange);
+  border-color: var(--osu-orange);
+  color: #fff;
+}
+
+/* Rotating border shimmer for team member cards */
+@property --shimmer-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes card-shimmer {
+  to { --shimmer-angle: 360deg; }
+}
+
+#gridid .hpc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--shimmer-angle),
+    transparent 0%,
+    rgba(255, 160, 70, 0.95) 10%,
+    transparent 22%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+#gridid .hpc-card:hover::before {
+  opacity: 1;
+  animation: card-shimmer 2s linear infinite;
+}
+
+/* Clickable cards */
+.hpc-card {
   position: relative;
+}
+.hpc-pub-card {
   cursor: pointer;
+}
+
+#gridid .hpc-card h4 {
+  font-weight: 400;
+  color: var(--osu-orange);
 }
 
 .hpc-item pubtit {
