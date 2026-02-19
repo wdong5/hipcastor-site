@@ -16,6 +16,8 @@ applications).
 
 Here are some themes and techniques that we currently work on:
 
+## Serverless Workflows (FaaS)
+<div class="hpc-card">
 **Function-as-a-Service, serverless workflows.** Modern Function-as-a-Service
 (FaaS) cloud platforms offer great potential for supporting event-driven
 scientific workflows. Nonetheless, there remain barriers to adoption by the
@@ -27,26 +29,34 @@ event-driven scientific workflows in R. A key novelty in FaaSr is the ability
 to deploy workflows across FaaS providers without the need for any managed
 servers for coordination. We have also explored using lightweight per-function
 virtual machines ([virtines](https://github.com/virtines/wasp)) to enable more strongly isolated FaaS platforms.
+</div>
 
-**Modern high-performance memory systems.** Modern memory systems involve
-designs aimed at surmounting the "memory wall," where memory capacity and
-bandwidth can limit workload performance. We are investigating new system
-software support for disaggregated memory, where a workload's memory is
-transparently expanded across nodes in a cluster. In particular, we developed
-a new compiler and runtime system for high-performance far memory called
-[TrackFM](https://dl.acm.org/doi/10.1145/3617232.3624856). To address memory
-bandwidth limitations, near-data processing architectures move compute nearer
-to memory, for example with processing units integrated near DRAM banks. We are
-investigating new software and hardware abstractions for next-generation
-processing-in-memory (PIM) architectures. 
+## High-performance Memory Systems
 
-**Specialized system software for HPC.** We are interested in ground-up redesigns of the
+<div class="hpc-card">
+Modern memory systems involve designs aimed at surmounting the "memory wall,"
+where memory capacity and bandwidth can limit workload performance. We are
+investigating new system software support for disaggregated memory, where
+a workload's memory is transparently expanded across nodes in a cluster. In
+particular, we developed a new compiler and runtime system for high-performance
+far memory called [TrackFM](https://dl.acm.org/doi/10.1145/3617232.3624856). To
+address memory bandwidth limitations, near-data processing architectures move
+compute nearer to memory, for example with processing units integrated near
+DRAM banks. We are investigating new software and hardware abstractions for
+next-generation processing-in-memory (PIM) architectures. 
+</div>
+
+## System Software for HPC
+<div class="hpc-card">
+We are interested in ground-up redesigns of the
 hardware/software layer for high-performance computing. In the past, we have developed new
 [operating systems](https://users.cs.northwestern.edu/~pdinda/Papers/sc21.pdf), [virtual machine monitors](https://github.com/virtines/wasp), 
 [languages](https://doi.org/10.1145/3453483.3460969), [compilers](https://dl.acm.org/doi/10.1145/3617232.3624856), and [hardware designs](https://ieeexplore.ieee.org/document/8842897) for HPC. 
+</div>
 
-**Software-defined virtual networks for edge-to-cloud computing.** While
-within cloud data centers, nodes can communicate without the presence of
+## Software-defined virtual networks for edge-to-cloud computing
+<div class="hpc-card">
+While within cloud data centers, nodes can communicate without the presence of
 Network Address Translators (NATs), edge computing applications require devices
 to communicate across different private networks and must deal with NAT
 traversal to enable edge-to-edge communication. We have designed and
@@ -58,3 +68,4 @@ integrates overlay tunnels with Software Defined Networking (SDN) software
 switches to create a virtual network with dynamic membership – supporting
 unmodified Ethernet/IP stacks to facilitate the deployment of edge
 applications. 
+</div>
