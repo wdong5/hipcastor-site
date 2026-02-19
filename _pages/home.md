@@ -10,7 +10,7 @@ We are the <u>Hi</u>gh-<u>P</u>erformance <u>C</u>omputing <u>a</u>nd <u>S</u>ys
 with the [School of EECS](https://engineering.oregonstate.edu/EECS) at [Oregon State University](https://oregonstate.edu). 
 
 
-Our members focus on [various aspects of systems and HPC research]({{ site.url }}{{ site.baseurl }}/research), including
+Our members focus on [various aspects of systems and HPC research]({{ '/research' | relative_url }}), including
 distributed systems, serverless computing, computer architecture, operating systems,
 systems for machine learning, virtualization; and emerging inter-disciplinary applications that 
 leverage advanced cyberinfrastructure.
@@ -24,5 +24,5 @@ OSU is the future home of the [Huang Collaborative Innovation Complex](https://l
 **We are looking for passionate new PhD students, undergrads, and Masters students to join the team!**
 
 <div class="text-center mt-3">
-  <a href="{{ site.url }}{{ site.baseurl }}/openings" class="hpc-arrow-link">See openings</a>
+  <a href="{{ '/openings' | relative_url }}" class="hpc-arrow-link">See openings</a>
 </div>

@@ -66,43 +66,43 @@ Portland is only a little more than an hour to the North.
     </ol>
     <div class="carousel-inner" markdown="0">
         <div class="carousel-item active">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/campus-fall.jpg" alt="OSU Campus in Fall" />
+            <img class="img-fluid" src="{{ '/images/corv/campus-fall.jpg' | relative_url }}" alt="OSU Campus in Fall" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/three-sisters.jpg" alt="Three Sisters" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/three-sisters.jpg' | relative_url }}" alt="Three Sisters" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/marys.jpg" alt="Mary's Peak" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/marys.jpg' | relative_url }}" alt="Mary's Peak" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/coast.jpeg" alt="Oregon Coast" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/coast.jpeg' | relative_url }}" alt="Oregon Coast" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/siuslaw.jpeg" alt="Siuslaw" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/siuslaw.jpeg' | relative_url }}" alt="Siuslaw" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/jefferson.jpg" alt="Mt. Jefferson" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/jefferson.jpg' | relative_url }}" alt="Mt. Jefferson" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/winery.jpeg" alt="Willamette Valley Winery" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/winery.jpeg' | relative_url }}" alt="Willamette Valley Winery" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/ski-bachelor.jpeg" alt="Mt. Bachelor" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/ski-bachelor.jpeg' | relative_url }}" alt="Mt. Bachelor" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/bend.jpeg" alt="Bend" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/bend.jpeg' | relative_url }}" alt="Bend" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/painted-hills.jpg" alt="Painted Hills" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/painted-hills.jpg' | relative_url }}" alt="Painted Hills" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/portland.jpg" alt="Portland" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/portland.jpg' | relative_url }}" alt="Portland" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/mt-hood.jpg" alt="Mt. Hood" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/mt-hood.jpg' | relative_url }}" alt="Mt. Hood" loading="lazy" />
         </div>
         <div class="carousel-item">
-            <img class="img-fluid" src="{{ site.url }}{{ site.baseurl }}/images/corv/santiam.jpg" alt="Santiam Pass" loading="lazy" />
+            <img class="img-fluid" src="{{ '/images/corv/santiam.jpg' | relative_url }}" alt="Santiam Pass" loading="lazy" />
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">

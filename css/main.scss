@@ -98,7 +98,7 @@ pubtit {
 #homeid h1 {
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 8vw, 4.5rem); /* 4.5rem at ≥900px — desktop unchanged */
   letter-spacing: 0.05em;
   line-height: 1.6;
 }
@@ -519,8 +519,8 @@ footer p {
 .hpc-topology {
   display: inline-block;
   vertical-align: middle;
-  width: 82px;
-  height: 65px; /* matches 100:80 viewBox ratio; fixed so it doesn't scale with font-size */
+  width: clamp(50px, 12vw, 82px);  /* 82px at ≥683px — desktop unchanged */
+  height: clamp(40px, 9.5vw, 65px);
   margin: 0 0.2em;
   overflow: visible;
 }
@@ -539,6 +539,10 @@ footer p {
 @media (max-width: 576px) {
   .hpc-pic-grid {
     grid-template-columns: 1fr;
+  }
+  #homeid {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 

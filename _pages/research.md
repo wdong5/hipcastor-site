@@ -80,13 +80,13 @@ applications.
 <div class="hpc-card" markdown="0">
   <div class="hpc-sponsor-logos">
     <a href="https://www.nsf.gov" target="_blank" rel="noopener">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/nsf.png" alt="National Science Foundation" class="hpc-sponsor-logo" decoding="async">
+      <img src="{{ '/images/logopic/nsf.png' | relative_url }}" alt="National Science Foundation" class="hpc-sponsor-logo" decoding="async">
     </a>
     <a href="https://www.intel.com" target="_blank" rel="noopener">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/intel-logo.svg" alt="Intel" class="hpc-sponsor-logo" decoding="async">
+      <img src="{{ '/images/logopic/intel-logo.svg' | relative_url }}" alt="Intel" class="hpc-sponsor-logo" decoding="async">
     </a>
     <a href="https://www.samsung.com" target="_blank" rel="noopener">
-      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/samsung.png" alt="Samsung" class="hpc-sponsor-logo" decoding="async">
+      <img src="{{ '/images/logopic/samsung.png' | relative_url }}" alt="Samsung" class="hpc-sponsor-logo" decoding="async">
     </a>
   </div>
 </div>
