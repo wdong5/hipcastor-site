@@ -12,9 +12,9 @@ high-performance computing) and across layers of abstraction (including
 computer architecture, operating systems, virtualization, middleware, software engineering, and
 applications).
 
-Here are some themes and techniques that we currently work on:
+Here are some areas that we currently work in:
 
-## Serverless Workflows (FaaS)
+### Serverless Workflows (FaaS)
 <div class="hpc-card">
 **Function-as-a-Service, serverless workflows.** Modern Function-as-a-Service
 (FaaS) cloud platforms offer great potential for supporting event-driven
@@ -29,8 +29,7 @@ servers for coordination. We have also explored using lightweight per-function
 virtual machines ([virtines](https://github.com/virtines/wasp)) to enable more strongly isolated FaaS platforms.
 </div>
 
-## High-performance Memory Systems
-
+### High-performance Memory Systems
 <div class="hpc-card">
 Modern memory systems involve designs aimed at surmounting the "memory wall,"
 where memory capacity and bandwidth can limit workload performance. We are
@@ -44,7 +43,7 @@ DRAM banks. We are investigating new software and hardware abstractions for
 next-generation processing-in-memory (PIM) architectures.
 </div>
 
-## System Software for HPC
+### System Software for HPC
 <div class="hpc-card">
 We are interested in ground-up redesigns of the
 hardware/software layer for high-performance computing. In the past, we have developed new
@@ -52,7 +51,7 @@ hardware/software layer for high-performance computing. In the past, we have dev
 [languages](https://doi.org/10.1145/3453483.3460969), [compilers](https://dl.acm.org/doi/10.1145/3617232.3624856), and [hardware designs](https://ieeexplore.ieee.org/document/8842897) for HPC.
 </div>
 
-## Software-defined virtual networks for edge-to-cloud computing
+### Software-defined virtual networks for edge-to-cloud computing
 <div class="hpc-card">
 While within cloud data centers, nodes can communicate without the presence of
 Network Address Translators (NATs), edge computing applications require devices
@@ -66,4 +65,14 @@ integrates overlay tunnels with Software Defined Networking (SDN) software
 switches to create a virtual network with dynamic membership – supporting
 unmodified Ethernet/IP stacks to facilitate the deployment of edge
 applications.
+</div>
+
+## Software
+<div class="hpc-card">
+Coming soon!
+</div>
+
+## Sponsors
+<div class="hpc-card">
+Coming soon!
 </div>
