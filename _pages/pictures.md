@@ -1,7 +1,7 @@
 ---
-title: "HiPCastor - Pictures"
+title: "HiPCastor - Photos"
 layout: piclay
-excerpt: "HiPCastor -- Pictures"
+excerpt: "HiPCastor -- Photos"
 permalink: /pictures/
 ---
 
