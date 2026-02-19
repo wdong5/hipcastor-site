@@ -1,3 +1,39 @@
+- title: "LUMOS: Democratizing SciML Workflows with L0-Regularized Learning for Unified Feature and Parameter Adaptation"
+  description: L0-regularized learning for unified feature and parameter adaptation in SciML workflows.
+  authors: Shouwei Gao, Xu Zheng, Dongsheng Luo, Di Sheng, Wenqian Dong
+  link:
+    url: ""
+    display: Proceedings of the 40th IEEE International Parallel and Distributed Processing Symposium, 2026
+  highlight: 0
+  series: "IPDPS '26"
+
+# - title: "Enabling Unstructured Sparse Fine-Tuning and Inference for Foundation Models on Wafer-Scale Engine"
+#   description: Unstructured sparse fine-tuning and inference for foundation models on wafer-scale systems.
+#   authors: Haoyu Zheng, Yifan Zeng, Linghao Song, Murali Emani, Wenqian Dong
+#   link:
+#     url: https://dl.acm.org/doi/10.1145/3731599.3767395
+#     display: "ExHetAI25 Workshop at SC 2025 | <a href=\"../slides/publication/Phoenix - SC'25.pdf\">slides</a> | <a href=\"https://github.com/Picomp-lab/Phoenix\">code</a>"
+#   highlight: 0
+#   series: "SCW '25"
+
+# - title: "HurriCast: Synthetic Tropical Cyclone Track Generation for Hurricane Forecasting"
+#   description: Synthetic tropical cyclone track generation for hurricane forecasting.
+#   authors: Shouwei Gao, Meiyan Gao, Yuepeng Li, Wenqian Dong
+#   link:
+#     url: https://ojs.aaai.org/index.php/AAAI-SS/article/view/35581
+#     display: "AAAI Spring Symposium Series, 2025 | <a href=\"https://github.com/Picomp-lab/Hurricast/blob/main/HurriCast%20Slides.pdf\">slides</a> | <a href=\"https://github.com/Picomp-lab/Hurricast?tab=readme-ov-file\">code</a>"
+#   highlight: 0
+#   series: "AAAI SS '25"
+
+- title: "Framework for tracking metadata, lineage and model provenance in hybrid simulation-AI HPC exascale workflows"
+  description: A framework for metadata, lineage, and model provenance tracking in hybrid simulation-AI exascale workflows.
+  authors: Martin Foltin, Andrew Shao, Rishabh Sharma, Shreyas Kulkarni, Annmary Justine Koomthanam, Aalap Tripathy, Cong Xu, Wenqian Dong, Suparna Bhattacharya, Brian Sammuli, Paolo Faraboschi
+  link:
+    url: https://dl.acm.org/doi/10.1145/3757348.3757364
+    display: "Proceedings of the Cray User Group, 2025"
+  highlight: 0
+  series: "CUG '25"
+
 - title: "CoPPar Tree: Fast and Composable Consistency at Global Scale"
   description: Composable geo-replicated consensus with sequential consistency
   authors: Xincheng Yang and Kyle C. Hale
@@ -6,6 +42,26 @@
       display: Proceedings of the 24th IEEE International Symposium on Parallel and Distributed Computing
   highlight: 0
   series: ISPDC '25
+
+- title: "Near-term Ecological Forecasting for Climate Change Action"
+  description:  Ecological forecasts can be used to predict changes in ecosystems and subsequent impacts on communities. In addition to long-term projections, there is an important need for forecasts in shorter-term decision-making time periods of weeks and months. Scientists at the Ecological Forecasting Initiative are working to advance the field through a process that enables them to continually update model predictions with observed data in order to improve our ability to foresee what may happen in the future.
+  authors: Michael Dietze, Ethan P. White, Antoinette Abeyta, Carl Boettiger, Nievita Bueno Watts, Cayelan C. Carey, Rebecca Chaplin-Kramer, Ryan E. Emanuel, S. K. Morgan Ernest, Renato J. Figueiredo, Michael D. Gerst, Leah R. Johnson, Melissa A. Kenney, Jason S. McLachlan, Ioannis Ch. Paschalidis, Jody A. Peters, Christine R. Rollinson, Juniper Simonis, Kira Sullivan-Wiley, R. Quinn Thomas, Glenda M. Wardle, Alyssa M. Willson & Jacob Zwart
+  image: EFI.png
+  link:
+    url: https://www.nature.com/articles/s41558-024-02182-0
+    display: Nature Climate Change, Nov. 2024
+  series: "Nature '24"
+  highlight: 1
+
+- title: "TimeX++: Learning Time-Series Explanations with Information Bottleneck"
+  description: Time-series explanation learning with an information bottleneck objective.
+  authors: Zichuan Liu, Tianchun Wang, Jimeng Shi, Xu Zheng, Zhuomin Chen, Lei Song, Wenqian Dong, Jayantha Obeysekera, Farhad Shirani, Dongsheng Luo
+  link:
+    url: https://dl.acm.org/doi/10.5555/3692070.3693367
+    display: Proceedings of the 41st International Conference on Machine Learning, 2024
+  highlight: 0
+  series: "ICML '24"
+
 
 - title: "FaaSr: Cross-Platform Function-as-a-Service Serverless Scientific Workflows in R"
   description: This paper describes the FaaSr system for cross-platform engineless, serverlss execution of scientific workflows
@@ -44,6 +100,24 @@
   highlight: 0
   series: NetSoft '24
 
+- title: "Auto-HPCnet: An Automatic Framework to Build Neural Network-based Surrogate Models for HPC Applications"
+  description: An automatic framework for building neural-network-based surrogate models for HPC applications.
+  authors: Wenqian Dong, Gokcen Kestor, Dong Li
+  link:
+    url: https://dl.acm.org/doi/10.1145/3588195.3592985
+    display: Proceedings of the 32nd ACM International Symposium on High-Performance Parallel and Distributed Computing, 2023
+  highlight: 0
+  series: "HPDC '23"
+
+- title: "Betty: Enabling Large-Scale GNN Training with Batch-Level Graph Partitioning"
+  description: Batch-level graph partitioning to enable large-scale GNN training.
+  authors: Shuangyan Yang, Mingjia Zhang, Wenqian Dong, Dong Li
+  link:
+    url: https://dl.acm.org/doi/10.1145/3575693.3575725
+    display: Proceedings of the 28th International Conference on Architectural Support for Programming Languages and Operating Systems, 2023
+  highlight: 0
+  series: "ASPLOS '23"
+
 - title: "Bolt: Fast Inference for Random Forests"
   description: We present Bolt, a platform that restructures whole random forests, not just individual trees, to speed up inference
   authors: Eduardo Romero, Christopher Stewart, Angela Li, Kyle C. Hale, Nathaniel Morris
@@ -70,6 +144,34 @@
     display: Proceedings of the 7th European Conference on Computer Systems, 2022
   highlight: 0
   series: EuroSys '22
+
+- title: "Fauce: Fast and Accurate Deep Ensembles with Uncertainty for Cardinality Estimation"
+  description: Fast and accurate uncertainty-aware deep ensembles for cardinality estimation.
+  authors: Jie Liu, Wenqian Dong, Qingqing Zhou, Dong Li
+  link:
+    url: https://vldb.org/pvldb/vol14/p1950-liu.pdf
+    display: Proceedings of the 47th International Conference on Very Large Data Bases, 2021
+  highlight: 0
+  series: "VLDB '21"
+
+- title: "MD-HM: Memoization-based Molecular Dynamics Simulations on Big Memory System"
+  description: Memoization-based molecular dynamics simulations on big-memory systems.
+  authors: Zhen Xie, Wenqian Dong, Jie Liu, Ivy Peng, Yanbao Ma, Dong Li
+  link:
+    url: https://dl.acm.org/doi/10.1145/3447818.3460365
+    display: Proceedings of the 35th International Conference on Supercomputing, 2021
+  highlight: 0
+  series: "ICS '21"
+
+- title: "Tahoe: Tree Structure-Aware High Performance Inference Engine for Decision Tree Ensemble on GPU"
+  description: Tree-structure-aware high-performance inference for decision tree ensembles on GPUs.
+  authors: Zhen Xie, Wenqian Dong, Jiawen Liu, Hang Liu, Dong Li
+  link:
+    url: https://dl.acm.org/doi/abs/10.1145/3447786.3456251
+    display: Proceedings of the 16th European Conference on Computer Systems, 2021
+  highlight: 0
+  series: "EuroSys '21"
+
 
 - title: "Edge-to-cloud Virtualized Cyberinfrastructure for Near Real-time Water Quality Forecasting in Lakes and Reservoirs"
   description: This paper describes the cyberinfrastructure underpinning the FLARE forecasting system
@@ -98,12 +200,20 @@
   highlight: 0
   series: SC '21
 
-- title: "Near-term Ecological Forecasting for Climate Change Action"
-  description:  Ecological forecasts can be used to predict changes in ecosystems and subsequent impacts on communities. In addition to long-term projections, there is an important need for forecasts in shorter-term decision-making time periods of weeks and months. Scientists at the Ecological Forecasting Initiative are working to advance the field through a process that enables them to continually update model predictions with observed data in order to improve our ability to foresee what may happen in the future.
-  authors: Michael Dietze, Ethan P. White, Antoinette Abeyta, Carl Boettiger, Nievita Bueno Watts, Cayelan C. Carey, Rebecca Chaplin-Kramer, Ryan E. Emanuel, S. K. Morgan Ernest, Renato J. Figueiredo, Michael D. Gerst, Leah R. Johnson, Melissa A. Kenney, Jason S. McLachlan, Ioannis Ch. Paschalidis, Jody A. Peters, Christine R. Rollinson, Juniper Simonis, Kira Sullivan-Wiley, R. Quinn Thomas, Glenda M. Wardle, Alyssa M. Willson & Jacob Zwart
-  image: EFI.png
+- title: "Smart-PGSim: Using Neural Network to Accelerate AC-OPF Power Grid Simulation"
+  description: Neural-network acceleration for AC-OPF power grid simulation.
+  authors: Wenqian Dong, Zhen Xie, Gokcen Kestor, Dong Li
   link:
-    url: https://www.nature.com/articles/s41558-024-02182-0
-    display: Nature Climate Change, Nov. 2024
-  series: "Nature '24"
-  highlight: 1
+    url: https://ieeexplore.ieee.org/abstract/document/9355288
+    display: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, 2020
+  highlight: 0
+  series: "SC '20"
+
+- title: "Adaptive Neural Network-Based Approximation to Accelerate Eulerian Fluid Simulation"
+  description: Adaptive neural-network-based approximation for faster Eulerian fluid simulation.
+  authors: Wenqian Dong, Jie Liu, Zhen Xie, Dong Li
+  link:
+    url: https://dl.acm.org/doi/10.1145/3295500.3356147
+    display: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, 2019
+  highlight: 0
+  series: "SC '19"
