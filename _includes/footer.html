@@ -83,22 +83,44 @@
 </script>
 
 <script>
-  /* Rotating tesseract (Q4 hypercube) for the home page title.
+  /* Rotating tesseract (Q4 hypercube) — canvas version.
+     Eliminates ~416 setAttribute calls/frame from the SVG version.
      Projects 4D vertices via perspective (4D→3D) then orthographic (3D→2D),
-     rotating simultaneously in the XW and YZ planes.
-     Packet dots travel along each edge in screen-space each frame. */
+     rotating simultaneously in the XW and YZ planes. */
   (function () {
     var svg = document.querySelector('.hpc-topology');
     if (!svg) return;
 
-    var NS     = 'http://www.w3.org/2000/svg';
+    /* Wrap the SVG so we can overlay a canvas at the same size */
+    var wrapper = document.createElement('span');
+    wrapper.style.cssText = 'display:inline-block;position:relative;vertical-align:middle;';
+    svg.parentNode.insertBefore(wrapper, svg);
+    wrapper.appendChild(svg);
+
+    var canvas = document.createElement('canvas');
+    canvas.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;';
+    wrapper.appendChild(canvas);
+
+    /* Hide SVG visuals but keep it for layout sizing */
+    svg.style.visibility = 'hidden';
+
+    var dpr = window.devicePixelRatio || 1;
+    var rect = svg.getBoundingClientRect();
+    wrapper.style.width = rect.width + 'px';
+    wrapper.style.height = rect.height + 'px';
+    canvas.width = Math.round(rect.width * dpr);
+    canvas.height = Math.round(rect.height * dpr);
+    var ctx = canvas.getContext('2d');
+    ctx.scale(dpr, dpr);
+    var W = rect.width;
+    var H = rect.height;
+
     var ORANGE = '#d74009';
     var BLUE   = '#158CBA';
     var DW     = 2.5;
-    var SCALE  = 19;
-    var CX = 50, CY = 40;
+    var SCALE  = H * 0.14;
+    var CX = W * 0.5, CY = H * 0.5;
 
-    /* 16 vertices of the unit tesseract in [-1,1]^4 */
     var verts = [];
     for (var i = 0; i < 16; i++) {
       verts.push([
@@ -109,7 +131,6 @@
       ]);
     }
 
-    /* 32 edges: pairs differing by exactly one bit */
     var edges = [];
     for (var a = 0; a < 16; a++) {
       for (var b = a + 1; b < 16; b++) {
@@ -118,74 +139,64 @@
       }
     }
 
-    /* Build SVG elements — edges → packets → nodes (painter's order) */
-    var edgeEls = edges.map(function () {
-      var el = document.createElementNS(NS, 'line');
-      svg.appendChild(el);
-      return el;
-    });
-    var packetEls = edges.map(function () {
-      var el = document.createElementNS(NS, 'circle');
-      svg.appendChild(el);
-      return el;
-    });
-    var nodeEls = verts.map(function () {
-      var el = document.createElementNS(NS, 'circle');
-      svg.appendChild(el);
-      return el;
-    });
-
     function project(v, t) {
-      var a  = t * 0.35;
-      var x  = v[0] * Math.cos(a) - v[3] * Math.sin(a);
-      var w  = v[0] * Math.sin(a) + v[3] * Math.cos(a);
-      var b  = t * 0.22;
-      var y  = v[1] * Math.cos(b) - v[2] * Math.sin(b);
+      var ra = t * 0.35;
+      var cosA = Math.cos(ra), sinA = Math.sin(ra);
+      var x  = v[0] * cosA - v[3] * sinA;
+      var w  = v[0] * sinA + v[3] * cosA;
+      var rb = t * 0.22;
+      var cosB = Math.cos(rb), sinB = Math.sin(rb);
+      var y  = v[1] * cosB - v[2] * sinB;
       var sw = DW / (DW - w);
       return { x: x * sw * SCALE + CX, y: y * sw * SCALE + CY, d: sw };
     }
 
     var rafId = null;
+    var TAU = Math.PI * 2;
 
     function frame(ts) {
-      var t   = ts * 0.001;
-      var pts = verts.map(function (v) { return project(v, t); });
+      var t = ts * 0.001;
+      ctx.clearRect(0, 0, W, H);
 
-      edges.forEach(function (e, i) {
-        var p1    = pts[e[0]], p2 = pts[e[1]];
-        var d     = (p1.d + p2.d) * 0.5;
+      var pts = new Array(16);
+      for (var i = 0; i < 16; i++) pts[i] = project(verts[i], t);
+
+      for (var i = 0; i < edges.length; i++) {
+        var e = edges[i];
+        var p1 = pts[e[0]], p2 = pts[e[1]];
+        var d = (p1.d + p2.d) * 0.5;
         var color = d > 1.2 ? ORANGE : BLUE;
+        var alpha = Math.min(0.85, 0.1 + d * 0.42);
 
-        /* Base edge */
-        var el = edgeEls[i];
-        el.setAttribute('x1', p1.x.toFixed(1));
-        el.setAttribute('y1', p1.y.toFixed(1));
-        el.setAttribute('x2', p2.x.toFixed(1));
-        el.setAttribute('y2', p2.y.toFixed(1));
-        el.setAttribute('stroke', color);
-        el.setAttribute('stroke-width',   (0.4 + d * 0.45).toFixed(2));
-        el.setAttribute('stroke-opacity', Math.min(0.85, 0.1 + d * 0.42).toFixed(2));
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 0.4 + d * 0.45;
+        ctx.globalAlpha = alpha;
+        ctx.stroke();
 
-        /* Packet dot — travels 0→1 along each edge, staggered via golden ratio */
         var speed = 0.20 + (i % 5) * 0.04;
         var phase = ((t * speed) + i * 0.6180) % 1;
-        var pkt   = packetEls[i];
-        pkt.setAttribute('cx', (p1.x + phase * (p2.x - p1.x)).toFixed(1));
-        pkt.setAttribute('cy', (p1.y + phase * (p2.y - p1.y)).toFixed(1));
-        pkt.setAttribute('r',  (1.2 + d * 0.35).toFixed(2));
-        pkt.setAttribute('fill',         color);
-        pkt.setAttribute('fill-opacity', Math.min(0.95, 0.25 + d * 0.42).toFixed(2));
-      });
+        var px = p1.x + phase * (p2.x - p1.x);
+        var py = p1.y + phase * (p2.y - p1.y);
+        ctx.beginPath();
+        ctx.arc(px, py, 1.2 + d * 0.35, 0, TAU);
+        ctx.fillStyle = color;
+        ctx.globalAlpha = Math.min(0.95, 0.25 + d * 0.42);
+        ctx.fill();
+      }
 
-      nodeEls.forEach(function (el, i) {
+      for (var i = 0; i < 16; i++) {
         var p = pts[i];
-        el.setAttribute('cx', p.x.toFixed(1));
-        el.setAttribute('cy', p.y.toFixed(1));
-        el.setAttribute('r',  Math.max(1.8, (1.8 + p.d * 1.2)).toFixed(2));
-        el.setAttribute('fill',         p.d > 1.2 ? ORANGE : BLUE);
-        el.setAttribute('fill-opacity', Math.min(1, 0.4 + p.d * 0.32).toFixed(2));
-      });
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, Math.max(1.8, 1.8 + p.d * 1.2), 0, TAU);
+        ctx.fillStyle = p.d > 1.2 ? ORANGE : BLUE;
+        ctx.globalAlpha = Math.min(1, 0.4 + p.d * 0.32);
+        ctx.fill();
+      }
 
+      ctx.globalAlpha = 1;
       rafId = requestAnimationFrame(frame);
     }
 

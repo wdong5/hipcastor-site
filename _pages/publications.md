@@ -17,7 +17,7 @@ permalink: /publications/
 <div class="hpc-card hpc-pub-card">
   <a href="{{ publi.link.url }}" class="stretched-link"></a>
   <pubtit>{{ publi.title }}</pubtit>
-  <img src="{{ '/images/pubpic/' | append: publi.image | relative_url }}" class="img-fluid" width="33%" style="float: left" loading="lazy" alt="{{ publi.title }}" />
+  <img src="{{ '/images/pubpic/' | append: publi.image | relative_url }}" class="img-fluid" width="33%" style="float: left" loading="lazy" decoding="async" alt="{{ publi.title }}" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
   <kbd>{{ publi.series }}</kbd>

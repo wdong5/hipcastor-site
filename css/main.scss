@@ -19,7 +19,7 @@ body {
   background: #fff;
 }
 
-/* Fixed gradient via pseudo-element so it composites on the GPU independently of scroll */
+/* Fixed gradient — position:fixed already promotes to own compositor layer */
 body::before {
   content: '';
   position: fixed;
@@ -145,7 +145,7 @@ pubtit {
   padding-right: 26px;
 }
 
-/* Navbar — frosted glass with accent stripe */
+/* Navbar — frosted glass */
 .navbar {
   --bs-navbar-padding-y: 0;
   background: rgba(255, 255, 255, 0.92);
@@ -156,6 +156,8 @@ pubtit {
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   overflow: visible;
+  contain: layout style;
+  will-change: backdrop-filter; /* keep blur composited on its own layer */
 }
 .navbar::after {
   content: "";
@@ -271,7 +273,6 @@ kbd,
   background: #fff;
   margin-top: 0.75rem;
   margin-bottom: 1.25rem;
-  contain: layout style;
 
   /* hover transitions only; reveal transitions scoped to :not(.revealed) below */
   transition:
@@ -297,6 +298,7 @@ kbd,
   opacity: 1;
   transform: translateY(0);
   will-change: auto;
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 /* hover lift — only after revealed so it doesn't fight the initial animation */
@@ -510,6 +512,7 @@ footer p {
   opacity: 1;
   transform: translateY(0);
   will-change: auto;
+  transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
 #newsid .hpc-item {
@@ -564,8 +567,8 @@ footer p {
 .hpc-topology {
   display: inline-block;
   vertical-align: middle;
-  width: clamp(50px, 12vw, 82px);  /* 82px at ≥683px — desktop unchanged */
-  height: clamp(40px, 9.5vw, 65px);
+  width: clamp(70px, 16vw, 110px);
+  height: clamp(58px, 13vw, 90px);
   margin: 0 0.2em;
   overflow: visible;
 }
