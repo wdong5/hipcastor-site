@@ -145,15 +145,17 @@ pubtit {
   padding-right: 26px;
 }
 
-/* Navbar — white with card-matching border, logo height sets the rhythm */
+/* Navbar — frosted glass with accent stripe */
 .navbar {
   --bs-navbar-padding-y: 0;
-  background-color: #fff;
-  border-bottom: 1.5px solid #dee2e6;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(222, 226, 230, 0.5);
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  overflow: hidden;
+  overflow: visible;
 }
 .navbar::after {
   content: "";
@@ -171,12 +173,24 @@ pubtit {
   padding-top: 0;
   padding-bottom: 0;
 }
+/* (5) Logo hover micro-interaction */
+.navbar .navbar-brand img {
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  mix-blend-mode: multiply;
+  transition: transform 0.2s ease;
+}
+.navbar .navbar-brand img:hover {
+  transform: scale(1.06);
+}
 .navbar .nav-link {
   position: relative;
-  padding: 0 0.6rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
   color: #555;
   text-decoration: none;
-  transition: color 0.18s ease;
+  transition: color 0.18s ease, background 0.18s ease;
 }
 .navbar .nav-link::after {
   content: "";
@@ -197,10 +211,14 @@ pubtit {
 .navbar .nav-link:focus::after {
   clip-path: inset(0 0% 0 0);
 }
-.navbar .navbar-brand img {
-  margin: 0;
-  border-radius: 0;
-  display: block;
+/* (3) Active page indicator — subtle pill */
+.navbar .nav-link.active {
+  color: var(--osu-orange);
+  font-weight: 500;
+  background: rgba(215, 64, 9, 0.08);
+}
+.navbar .nav-link.active::after {
+  display: none;
 }
 
 
