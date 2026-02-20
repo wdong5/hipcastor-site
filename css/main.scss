@@ -153,6 +153,19 @@ pubtit {
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  overflow: hidden;
+}
+.navbar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.08;
+}
+.navbar > .container-fluid {
+  position: relative;
+  z-index: 1;
 }
 .navbar .navbar-brand {
   padding-top: 0;
