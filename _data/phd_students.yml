@@ -61,6 +61,27 @@
   number_educ: 1
   education1: MS @ Tennessee State University (2025)
 
+- name: <a href="https://xty9501.github.io/">Mingze Xia</a>
+  photo: Mingze.jpg
+  info: Ph.D. student, since 2022
+  email: xiami@oregonstate.edu
+  number_educ: 1
+  education1: MS @ University of Melbourne (2019)
+
+- name: <a href="https://scholar.google.com/citations?user=fw4Hx2QAAAAJ&hl=en">Xuan Wu</a>
+  photo: xuan.jpg
+  info: Ph.D. student, since 2023
+  email: wuxuan@oregonstate.edu
+  number_educ: 1
+  education1: BS @ Wuhan University (2022)
+
+- name: <a href="https://scholar.google.com/citations?user=SVYA5dsAAAAJ&hl=en">Wenbo Li</a>
+  photo: wenbo.JPEG
+  info: Ph.D. student, since 2024
+  email: liwenb@oregonstate.edu
+  number_educ: 1
+  education1: BS @ Huazhong University of Science and Technology (2024)
+
 - name: "This could be you!"
   photo: rock.jpg
   info: See <a href="../openings">openings</a> for more info
