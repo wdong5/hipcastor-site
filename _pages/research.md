@@ -67,10 +67,75 @@ unmodified Ethernet/IP stacks to facilitate the deployment of edge
 applications.
 </div>
 
+### System techniques to efficiently serve large-scale AI models on HPC systems
+<div class="hpc-card">
+Systems and algorithms for deploying and optimizing large
+deep neural networks at scale on HPC platforms. Foundational work includes
+[Fauce (VLDB'21)](https://vldb.org/pvldb/vol14/p1950-liu.pdf), an efficient
+framework for deep ensemble inference;
+[MD-HM (ICS'21)](https://dl.acm.org/doi/10.1145/3447818.3460365), a memory
+optimization scheme for large molecular dynamics simulations; and
+[Tahoe (EuroSys'21)](https://dl.acm.org/doi/abs/10.1145/3447786.3456251),
+high-performance inference for decision tree ensembles on GPUs.
+Building on this base, we have advanced scalable large-scale LLM
+serving with new methods for retrieval-augmented generation (RAG), multi-agent
+coordination, and an automatic framework for plugging AI surrogates into HPC
+applications, [Auto-HPCnet (HPDC'23)](https://dl.acm.org/doi/10.1145/3588195.3592985).
+These efforts introduce a unified software stack that
+connects low-level operators, model execution, and end-to-end applications for
+large-scale AI. 
+</div>
+
+### Efficient and physics-informed AI for scientific applications
+<div class="hpc-card">
+Domain-aware and efficient AI methods that reduce
+simulation cost while preserving physical fidelity.
+[Adaptive Neural Network-Based Approximation to Accelerate Eulerian Fluid Simulation (SC'19)](https://dl.acm.org/doi/10.1145/3295500.3356147)
+demonstrated neural surrogates for accelerating fluid dynamics.
+[Smart-PGSim (SC'20)](https://ieeexplore.ieee.org/abstract/document/9355288)
+showed AI acceleration for power grid simulation and was later highlighted by
+[DOE](https://www.newswise.com/doescience/pnnl-researchers-speed-power-grid-simulations-using-ai/?article_id=741430)
+and
+[PNNL](https://www.pnnl.gov/news-media/pnnl-researchers-speed-power-grid-simulations-using-ai#:~:text=Share%3A,the%20blink%20of%20an%20eye).
+[Auto-HPCnet (HPDC'23)](https://dl.acm.org/doi/10.1145/3588195.3592985)
+introduced an automated framework for constructing neural surrogate models for
+HPC applications, bridging AI workflows and large-scale simulation codes.
+[TimeX++ (ICML'24)](https://dl.acm.org/doi/10.5555/3692070.3693367) extended
+these ideas for temporal modeling through an
+interpretable and efficient time-series learning framework for scientific
+forecasting. Most recently, our submitted IPDPS'26 paper
+[LUMOS](https://github.com/Picomp-lab/LUMOS-IPDPS26) advances SciML
+efficiency by unifying automatic feature selection and structured parameter
+pruning through L0-regularized learning, reducing manual trial-and-error in
+building high-quality scientific surrogate models.
+Together, these contributions advance surrogate modeling, AI model efficiency,
+and uncertainty-aware learning and fine-tuning for scientific workloads. 
+</div>
+
+### System optimization on AI accelerators
+<div class="hpc-card">
+Runtime and system-level techniques for emerging AI
+accelerators, with a focus on Cerebras wafer-scale engines. These platforms
+depart from the traditional GPU model by providing very large on-chip compute
+and memory capacity, and our work helps unlock their potential for training and
+serving increasingly large AI models.
+Our recent workshop paper,
+[Phoenix (SC'25 Workshop)](https://dl.acm.org/doi/10.1145/3731599.3767395),
+presents a framework for scalable and memory-efficient execution of sparse LoRA
+workloads on Cerebras systems, enabling larger and more efficient fine-tuning
+on wafer-scale hardware. This work is conducted in collaboration with Argonne
+and Yale University.
+Current student projects extend to RAG optimization on Cerebras, leveraging its
+massive on-chip memory to redesign dataflow and caching for LLM-based
+scientific and data-intensive applications.
+</div>
+
 ## Software
 <div class="hpc-card">
 - [EdgeVPN](https://github.com/edgevpnio) - VPN at the edge
 - [FaaSr](https://github.com/FaaSr) - Function-as-a-Service for R
+- [LUMOS](https://github.com/Picomp-lab/LUMOS-IPDPS26) - SciML workflow optimization with unified feature and parameter adaptation
+- [Phoenix](https://github.com/Picomp-lab/Phoenix) - sparse LoRA fine-tuning and inference on wafer-scale systems
 - [Shipyard](https://github.com/xyang76/shipyard) - Load balanced, sharded consensus
 - [TrackFM compiler](https://github.com/compiler-disagg/TrackFM) - automated far memory for legacy apps
 - [Wasp](https://github.com/virtines/wasp) - a microhypervisor for function-granularity virtualization
