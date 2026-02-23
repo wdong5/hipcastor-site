@@ -7,6 +7,15 @@
   highlight: 0
   series: "IPDPS '26"
 
+- title: "Shipyard: A Multi-Leader Consensus Protocol with Auto-Balanced Leadership of the Sharded Keyspace"
+  description: Load-balanced, multi-leader consensus with sharding
+  authors: Xincheng Yang and Kyle C. Hale
+  link:
+    url: ""
+    display: Proceedings of the 40th IEEE International Parallel and Distributed Processing Symposium, 2026
+  highlight: 0
+  series: "IPDPS '26"
+
 # - title: "Enabling Unstructured Sparse Fine-Tuning and Inference for Foundation Models on Wafer-Scale Engine"
 #   description: Unstructured sparse fine-tuning and inference for foundation models on wafer-scale systems.
 #   authors: Haoyu Zheng, Yifan Zeng, Linghao Song, Murali Emani, Wenqian Dong
