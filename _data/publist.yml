@@ -47,7 +47,7 @@
   description: Composable geo-replicated consensus with sequential consistency
   authors: Xincheng Yang and Kyle C. Hale
   link:
-      url: ""
+      url: "https://www.halek.co/papers/coppar-ispdc25.pdf"
       display: Proceedings of the 24th IEEE International Symposium on Parallel and Distributed Computing
   highlight: 0
   series: ISPDC '25
