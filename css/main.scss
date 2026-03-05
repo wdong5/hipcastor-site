@@ -19,11 +19,11 @@ body {
   background: #fff;
 }
 
-/* Skip navigation — visible only on keyboard focus */
+/* Skip navigation — visible only on keyboard focus (clip method for Safari compat) */
 .skip-link {
   position: absolute;
-  top: -100%;
   left: 1rem;
+  top: 0;
   z-index: 9999;
   padding: 0.5rem 1rem;
   background: var(--osu-orange);
@@ -31,9 +31,21 @@ body {
   border-radius: 0 0 6px 6px;
   font-weight: 500;
   text-decoration: none;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
 }
-.skip-link:focus {
-  top: 0;
+.skip-link:focus,
+.skip-link:focus-visible {
+  clip: auto;
+  clip-path: none;
+  overflow: visible;
+  white-space: normal;
+  width: auto;
+  height: auto;
   color: #fff;
 }
 
@@ -68,6 +80,7 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
 a {
@@ -339,7 +352,7 @@ kbd,
   display: inline-block;
   padding: 0.3rem 0.85rem;
   border-radius: 999px;
-  border: 1.5px solid rgba(215, 64, 9, 0.35);
+  border: 1.5px solid rgba(215, 64, 9, 0.55);
   color: var(--osu-orange);
   font-size: 0.85rem;
   font-weight: 500;

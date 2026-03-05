@@ -41,7 +41,12 @@
 
   window.addEventListener('load', function () {
     if (typeof bootstrap !== 'undefined') {
+      var noAutoplay = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       document.querySelectorAll('[data-bs-ride="carousel"]').forEach(function (el) {
+        if (noAutoplay) {
+          el.removeAttribute('data-bs-ride');
+          el.setAttribute('data-bs-interval', 'false');
+        }
         bootstrap.Carousel.getOrCreateInstance(el);
       });
     }
@@ -113,6 +118,8 @@
     var svg = document.querySelector('.hpc-topology');
     if (!svg) return;
 
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     /* Wrap the SVG so we can overlay a canvas at the same size */
     var wrapper = document.createElement('span');
     wrapper.style.cssText = 'display:inline-block;position:relative;vertical-align:middle;';
@@ -176,8 +183,7 @@
     var rafId = null;
     var TAU = Math.PI * 2;
 
-    function frame(ts) {
-      var t = ts * 0.001;
+    function drawFrame(t) {
       ctx.clearRect(0, 0, W, H);
 
       var pts = new Array(16);
@@ -219,6 +225,16 @@
       }
 
       ctx.globalAlpha = 1;
+    }
+
+    /* Respect prefers-reduced-motion: render one static frame */
+    if (reducedMotion) {
+      drawFrame(0);
+      return;
+    }
+
+    function frame(ts) {
+      drawFrame(ts * 0.001);
       rafId = requestAnimationFrame(frame);
     }
 
