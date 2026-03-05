@@ -9,6 +9,7 @@
   --brand-blue: #158CBA;
   --brand-green: #28B62C;
   --osu-orange: #d74009;
+  --osu-orange-text: #c03707; /* darkened for 4.5:1 contrast on #fafafa */
 }
 
 body {
@@ -84,14 +85,14 @@ html {
 }
 
 a {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   text-decoration: none;
 }
 a:hover {
-  color: rgba(215, 64, 9, 0.75);
+  color: var(--osu-orange);
 }
 a:visited {
-  color: rgba(215, 64, 9, 0.7);
+  color: var(--osu-orange-text);
 }
 
 img {
@@ -238,7 +239,7 @@ p.byline {
 }
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
 }
 .navbar .nav-link:hover::after,
 .navbar .nav-link:focus::after {
@@ -246,7 +247,7 @@ p.byline {
 }
 /* (3) Active page indicator — subtle pill */
 .navbar .nav-link.active {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   font-weight: 500;
   background: rgba(215, 64, 9, 0.08);
 }
@@ -284,7 +285,7 @@ kbd,
   border-radius: 4px;
   border: 1.5px solid rgba(215, 64, 9, 0.40);
   background-color: rgba(215, 64, 9, 0.06);
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   line-height: 1.2;
   font-family: "JetBrains Mono", "Lucida Console", monospace;
   font-size: 13px;
@@ -353,7 +354,7 @@ kbd,
   padding: 0.3rem 0.85rem;
   border-radius: 999px;
   border: 1.5px solid rgba(215, 64, 9, 0.55);
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
@@ -413,7 +414,7 @@ kbd,
 
 #gridid .hpc-card h4 {
   font-weight: 400;
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
 }
 
 .hpc-item .pubtit {
@@ -516,7 +517,7 @@ footer p {
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -527,7 +528,7 @@ footer p {
   display: inline-block;
 }
 .hpc-arrow-link:hover {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   text-decoration: none;
 }
 .hpc-arrow-link:hover::after {
