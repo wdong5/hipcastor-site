@@ -15,8 +15,8 @@ permalink: /publications/
 {% for publi in site.data.publist %}
 {% if publi.highlight == 1 %}
 <div class="hpc-card hpc-pub-card">
-  <a href="{{ publi.link.url }}" class="stretched-link"></a>
-  <pubtit>{{ publi.title }}</pubtit>
+  <a href="{{ publi.link.url }}" class="stretched-link" aria-label="{{ publi.title }}"></a>
+  <strong class="pubtit">{{ publi.title }}</strong>
   <img src="{{ '/images/pubpic/' | append: publi.image | relative_url }}" class="img-fluid" width="33%" style="float: left" loading="lazy" decoding="async" alt="{{ publi.title }}" />
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
@@ -35,13 +35,13 @@ permalink: /publications/
 {% for publi in site.data.publist %}
 {% if publi.link.url != "" %}
 <div class="hpc-item hpc-pub-card" markdown="0">
-  <a href="{{ publi.link.url }}" class="stretched-link"></a>
-  <pubtit>{{ publi.title }}</pubtit>
+  <a href="{{ publi.link.url }}" class="stretched-link" aria-label="{{ publi.title }}"></a>
+  <strong class="pubtit">{{ publi.title }}</strong>
   <p class="mb-0"><kbd>{{ publi.series }}</kbd> <em>{{ publi.authors }}</em></p>
 </div>
 {% else %}
 <div class="hpc-item" markdown="0">
-  <pubtit>{{ publi.title }}</pubtit>
+  <strong class="pubtit">{{ publi.title }}</strong>
   <p class="mb-0"><kbd>{{ publi.series }}</kbd> <em>{{ publi.authors }}</em></p>
 </div>
 {% endif %}

@@ -58,9 +58,29 @@
     var shown = BATCH;
     items.slice(shown).forEach(function (el) { el.style.display = 'none'; });
 
+    /* "Show more" button — keyboard-accessible fallback for scroll-reveal */
+    var btn = document.createElement('a');
+    btn.href = '#';
+    btn.className = 'hpc-arrow-link';
+    btn.textContent = 'Show more news';
+    btn.style.cssText = 'display:block;text-align:center;margin:1rem 0;';
+    card.parentNode.insertBefore(btn, card.nextSibling);
+
+    function showMore() {
+      items.slice(shown, shown + BATCH).forEach(function (el) { el.style.display = ''; });
+      shown += BATCH;
+      if (shown >= items.length) btn.style.display = 'none';
+    }
+
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      showMore();
+    });
+
     /* If the page is too short to scroll, show everything immediately */
     if (document.documentElement.scrollHeight <= window.innerHeight + 50) {
       items.forEach(function (el) { el.style.display = ''; });
+      btn.style.display = 'none';
       return;
     }
 
@@ -72,9 +92,11 @@
         scrollPending = false;
         var remaining = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
         if (remaining > 300) return;
-        items.slice(shown, shown + BATCH).forEach(function (el) { el.style.display = ''; });
-        shown += BATCH;
-        if (shown >= items.length) window.removeEventListener('scroll', onScroll);
+        showMore();
+        if (shown >= items.length) {
+          window.removeEventListener('scroll', onScroll);
+          btn.style.display = 'none';
+        }
       });
     }
 

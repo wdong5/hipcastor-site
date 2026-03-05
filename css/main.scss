@@ -19,6 +19,24 @@ body {
   background: #fff;
 }
 
+/* Skip navigation — visible only on keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--osu-orange);
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+  color: #fff;
+}
+
 /* Fixed gradient — position:fixed already promotes to own compositor layer */
 body::before {
   content: '';
@@ -83,7 +101,7 @@ p.byline {
   margin-bottom: 48px;
 }
 
-pubtit {
+.pubtit {
   display: block;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -385,11 +403,11 @@ kbd,
   color: var(--osu-orange);
 }
 
-.hpc-item pubtit {
+.hpc-item .pubtit {
   margin-bottom: 0.15rem;
 }
 
-.hpc-card pubtit {
+.hpc-card .pubtit {
   text-align: center;
 }
 
@@ -446,15 +464,32 @@ kbd,
   }
 }
 
+/* Focus-visible — keyboard-only focus ring */
+:focus-visible {
+  outline: 2px solid var(--osu-orange);
+  outline-offset: 2px;
+}
+.navbar .nav-link:focus-visible {
+  outline-offset: 4px;
+}
+.hpc-pill:focus-visible {
+  background: rgba(215, 64, 9, 0.08);
+}
+.hpc-pub-card:focus-within {
+  transform: translateY(-3px);
+  border-color: var(--osu-orange);
+  box-shadow: 0 4px 14px rgba(215, 64, 9, 0.13);
+}
+
 /* Footer */
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: #999;
+  color: #595959;
   font-size: 0.875rem;
 }
 footer a {
-  color: #999;
+  color: #595959;
 }
 footer .row {
   align-items: center;
