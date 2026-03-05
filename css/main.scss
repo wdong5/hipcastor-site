@@ -87,14 +87,14 @@ html {
 a {
   color: var(--osu-orange-text);
   text-decoration: underline;
-  text-decoration-color: rgba(192, 55, 7, 0.3);
+  text-decoration-color: rgba(192, 55, 7, 0.45);
   text-underline-offset: 0.15em;
   text-decoration-thickness: 1px;
   transition: text-decoration-color 0.18s ease;
 }
 a:hover {
   color: var(--osu-orange);
-  text-decoration-color: rgba(215, 64, 9, 0.6);
+  text-decoration-color: var(--osu-orange);
 }
 a:visited {
   color: var(--osu-orange-text);
@@ -103,7 +103,6 @@ a:visited {
 /* UI links — no underline (visually distinct by shape/context) */
 .nav-link,
 .navbar-brand,
-.hpc-arrow-link,
 .hpc-pill,
 .stretched-link,
 .hpc-sponsor-logos a {
@@ -267,7 +266,7 @@ p.byline {
   background: rgba(215, 64, 9, 0.08);
 }
 .navbar .nav-link.active::after {
-  display: none;
+  clip-path: inset(0 0% 0 0);
 }
 
 
