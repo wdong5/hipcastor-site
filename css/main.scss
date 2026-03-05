@@ -9,6 +9,7 @@
   --brand-blue: #158CBA;
   --brand-green: #28B62C;
   --osu-orange: #d74009;
+  --osu-orange-text: #c03707; /* darkened for 4.5:1 contrast on #fafafa */
 }
 
 body {
@@ -17,6 +18,36 @@ body {
   margin-top: 3rem;
   padding-top: 3rem;
   background: #fff;
+}
+
+/* Skip navigation — visible only on keyboard focus (clip method for Safari compat) */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: var(--osu-orange);
+  color: #fff;
+  border-radius: 0 0 6px 6px;
+  font-weight: 500;
+  text-decoration: none;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  clip: auto;
+  clip-path: none;
+  overflow: visible;
+  white-space: normal;
+  width: auto;
+  height: auto;
+  color: #fff;
 }
 
 /* Fixed gradient — position:fixed already promotes to own compositor layer */
@@ -50,17 +81,32 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
 a {
-  color: var(--osu-orange);
-  text-decoration: none;
+  color: var(--osu-orange-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(192, 55, 7, 0.45);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 0.18s ease;
 }
 a:hover {
-  color: rgba(215, 64, 9, 0.75);
+  color: var(--osu-orange);
+  text-decoration-color: var(--osu-orange);
 }
 a:visited {
-  color: rgba(215, 64, 9, 0.7);
+  color: var(--osu-orange-text);
+}
+
+/* UI links — no underline (visually distinct by shape/context) */
+.nav-link,
+.navbar-brand,
+.hpc-pill,
+.stretched-link,
+.hpc-sponsor-logos a {
+  text-decoration: none;
 }
 
 img {
@@ -83,7 +129,7 @@ p.byline {
   margin-bottom: 48px;
 }
 
-pubtit {
+.pubtit {
   display: block;
   font-weight: 700;
   margin-bottom: 0.5rem;
@@ -207,7 +253,7 @@ pubtit {
 }
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
 }
 .navbar .nav-link:hover::after,
 .navbar .nav-link:focus::after {
@@ -215,12 +261,12 @@ pubtit {
 }
 /* (3) Active page indicator — subtle pill */
 .navbar .nav-link.active {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   font-weight: 500;
   background: rgba(215, 64, 9, 0.08);
 }
 .navbar .nav-link.active::after {
-  display: none;
+  clip-path: inset(0 0% 0 0);
 }
 
 
@@ -253,7 +299,7 @@ kbd,
   border-radius: 4px;
   border: 1.5px solid rgba(215, 64, 9, 0.40);
   background-color: rgba(215, 64, 9, 0.06);
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   line-height: 1.2;
   font-family: "JetBrains Mono", "Lucida Console", monospace;
   font-size: 13px;
@@ -321,8 +367,8 @@ kbd,
   display: inline-block;
   padding: 0.3rem 0.85rem;
   border-radius: 999px;
-  border: 1.5px solid rgba(215, 64, 9, 0.35);
-  color: var(--osu-orange);
+  border: 1.5px solid rgba(215, 64, 9, 0.55);
+  color: var(--osu-orange-text);
   font-size: 0.85rem;
   font-weight: 500;
   text-decoration: none;
@@ -382,14 +428,14 @@ kbd,
 
 #gridid .hpc-card h4 {
   font-weight: 400;
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
 }
 
-.hpc-item pubtit {
+.hpc-item .pubtit {
   margin-bottom: 0.15rem;
 }
 
-.hpc-card pubtit {
+.hpc-card .pubtit {
   text-align: center;
 }
 
@@ -446,15 +492,32 @@ kbd,
   }
 }
 
+/* Focus-visible — keyboard-only focus ring */
+:focus-visible {
+  outline: 2px solid var(--osu-orange);
+  outline-offset: 2px;
+}
+.navbar .nav-link:focus-visible {
+  outline-offset: 4px;
+}
+.hpc-pill:focus-visible {
+  background: rgba(215, 64, 9, 0.08);
+}
+.hpc-pub-card:focus-within {
+  transform: translateY(-3px);
+  border-color: var(--osu-orange);
+  box-shadow: 0 4px 14px rgba(215, 64, 9, 0.13);
+}
+
 /* Footer */
 footer {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: #999;
+  color: #595959;
   font-size: 0.875rem;
 }
 footer a {
-  color: #999;
+  color: #595959;
 }
 footer .row {
   align-items: center;
@@ -468,7 +531,7 @@ footer p {
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -479,7 +542,7 @@ footer p {
   display: inline-block;
 }
 .hpc-arrow-link:hover {
-  color: var(--osu-orange);
+  color: var(--osu-orange-text);
   text-decoration: none;
 }
 .hpc-arrow-link:hover::after {

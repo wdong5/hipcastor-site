@@ -41,10 +41,10 @@ permalink: /team/
 <div class="col-sm-6 clearfix">
   {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
   <div class="hpc-card">
-  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener" aria-label="{{ member.name | strip_html }}"></a>{% endif %}
   <img src="{{ '/images/teampic/' | append: member.photo | relative_url }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" decoding="async" />
   <h4>{{ member.name | strip_html }}</h4>
-  <i>{{ member.info }}</i>
+  <em>{{ member.info }}</em>
   <ul style="overflow: hidden">
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
@@ -102,10 +102,10 @@ permalink: /team/
 <div class="col-sm-6 clearfix">
   {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
   <div class="hpc-card">
-  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener" aria-label="{{ member.name | strip_html }}"></a>{% endif %}
   <img src="{{ '/images/teampic/' | append: member.photo | relative_url }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" decoding="async" />
   <h4>{{ member.name | strip_html }}</h4>
-  <i>{{ member.info }}</i>
+  <em>{{ member.info }}</em>
   <ul style="overflow: hidden">
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
@@ -150,10 +150,10 @@ permalink: /team/
 <div class="col-sm-6 clearfix">
   {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
   <div class="hpc-card">
-  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener" aria-label="{{ member.name | strip_html }}"></a>{% endif %}
   <img src="{{ '/images/teampic/' | append: member.photo | relative_url }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" decoding="async" />
   <h4>{{ member.name | strip_html }}</h4>
-  <i>{{ member.info }}</i>
+  <em>{{ member.info }}</em>
   <ul style="overflow: hidden">
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
@@ -204,10 +204,10 @@ permalink: /team/
 <div class="col-sm-6 clearfix">
   {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
   <div class="hpc-card">
-  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener" aria-label="{{ member.name | strip_html }}"></a>{% endif %}
   <img src="{{ '/images/teampic/' | append: member.photo | relative_url }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" decoding="async" />
   <h4>{{ member.name | strip_html }}</h4>
-  <i>{{ member.info }}</i>
+  <em>{{ member.info }}</em>
   <ul style="overflow: hidden">
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
@@ -258,10 +258,10 @@ permalink: /team/
 <div class="col-sm-6 clearfix">
   {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
   <div class="hpc-card">
-  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener" aria-label="{{ member.name | strip_html }}"></a>{% endif %}
   <img src="{{ '/images/teampic/' | append: member.photo | relative_url }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" decoding="async" />
   <h4>{{ member.name | strip_html }}</h4>
-  <i>{{ member.info }}</i>
+  <em>{{ member.info }}</em>
   <ul style="overflow: hidden">
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
@@ -312,10 +312,10 @@ permalink: /team/
 <div class="col-sm-6 clearfix">
   {% assign member_url = "" %}{% if member.name contains 'href' %}{% assign member_url = member.name | split: 'href="' | last | split: '"' | first %}{% endif %}
   <div class="hpc-card">
-  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener"></a>{% endif %}
+  {% if member_url != "" %}<a href="{{ member_url }}" class="stretched-link" target="_blank" rel="noopener" aria-label="{{ member.name | strip_html }}"></a>{% endif %}
   <img src="{{ '/images/teampic/' | append: member.photo | relative_url }}" class="img-fluid teampic" alt="{{ member.name | strip_html }}" style="float: left" loading="lazy" decoding="async" />
   <h4>{{ member.name | strip_html }}</h4>
-  <i>{{ member.info }}</i>
+  <em>{{ member.info }}</em>
   <ul style="overflow: hidden">
   {% if member.number_educ == 1 %}
   <li> {{ member.education1 }} </li>
